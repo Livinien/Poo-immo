@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 
 
     <title>Immobello - Accueil</title>
@@ -109,9 +109,6 @@
                         <h2 class="card-title">Villa sur la Côte</h2>
                         <h4 class="card-subtitle mt-3">Marseille, FRANCE</h4>
                         <h4 class="card-subtitle mt-3 mb-3">700 000 €</h4>
-                        <p class="card-text">This is a longer card with supporting text below as a natural
-                            lead-in
-                            to additional content. This content is a little bit longer.</p>
                     </div>
                 </div>
             </div>
@@ -122,9 +119,6 @@
                         <h2 class="card-title">Villa sur la Côte</h2>
                         <h4 class="card-subtitle mt-3">Marseille, FRANCE</h4>
                         <h4 class="card-subtitle mt-3 mb-3">700 000 €</h4>
-                        <p class="card-text">This is a longer card with supporting text below as a natural
-                            lead-in
-                            to additional content. This content is a little bit longer.</p>
                     </div>
                 </div>
             </div>
@@ -135,9 +129,6 @@
                         <h2 class="card-title">Villa sur la Côte</h2>
                         <h4 class="card-subtitle mt-3">Marseille, FRANCE</h4>
                         <h4 class="card-subtitle mt-3 mb-3">700 000 €</h4>
-                        <p class="card-text">This is a longer card with supporting text below as a natural
-                            lead-in
-                            to additional content. This content is a little bit longer.</p>
                     </div>
                 </div>
             </div>
@@ -148,9 +139,6 @@
                         <h2 class="card-title">Villa sur la Côte</h2>
                         <h4 class="card-subtitle mt-3">Marseille, FRANCE</h4>
                         <h4 class="card-subtitle mt-3 mb-3">700 000 €</h4>
-                        <p class="card-text">This is a longer card with supporting text below as a natural
-                            lead-in
-                            to additional content. This content is a little bit longer.</p>
                     </div>
                 </div>
             </div>
@@ -172,7 +160,7 @@
             <div class="">
                 <h4>Nos Applications</h4>
                 <a href="#">Découvrez nos applications</a><br>
-                <a href=""><i class="bi bi-apple logo-apple"></i></a>
+                <a href="#"><i class="bi bi-apple logo-apple"></i></a>
                 <a class="ms-2" href=""><i class="bi bi-android2 logo-android"></i></a>
             </div>
 
