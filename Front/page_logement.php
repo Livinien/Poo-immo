@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/css/app.css">
 
 
     <title>Immobello - Page_Logement</title>
@@ -49,7 +49,7 @@
 
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="../images/Villa_sur_la_cote.jpg" class="contain d-block w-100" alt="Images de logements">
+                <img src="../assets/Images/Villa_sur_la_cote.jpg" class="contain d-block w-100" alt="Images de logements">
                 <div class="carousel-caption carousel d-none d-md-block">
                     <h2>Villa de Luxe</h2>
                     <p class="carousel-subtitle">Villa en face de la mer avec vue depuis la piscine.</p>
@@ -57,7 +57,7 @@
             </div>
 
             <div class="carousel-item">
-                <img src="../images/int_sal_b.jpg" class="d-block w-100" alt="...">
+                <img src="../assets/Images/int_sal_b.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h2>Villa sur la Côte</h2>
                     <p class="carousel-subtitle">Villa en face de la mer avec vue depuis la piscine.</p>
@@ -65,7 +65,7 @@
             </div>
 
             <div class="carousel-item">
-                <img src="../images/int_salon.jpg" class="d-block w-100" alt="...">
+                <img src="../assets/Images/int_salon.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h2>Maison du Lac</h2>
                     <p class="carousel-subtitle">Villa en face de la mer avec vue depuis la piscine.</p>
@@ -73,7 +73,7 @@
             </div>
 
             <div class="carousel-item">
-                <img src="../images/int_cuis.jpg" class="d-block w-100" alt="...">
+                <img src="../assets/Images/int_cuis.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h2>Maison Addams</h2>
                     <p class="carousel-subtitle">Villa en face de la mer avec vue depuis la piscine.</p>
@@ -98,22 +98,22 @@
 
 
     <!-- CARTE DU LOGEMENT -->
-   
+<div class="container">  
     <div class="card-body w-25">
         <h2 class="card-title">Villa de Luxe</h2>
             <h4 class="card-subtitle mt-3">Surface 3500 m2 au total</h4>
                 <h4 class="card-subtitle mt-3 mb-3"> prix: 1 000 000 €</h4>
     </div>
 
-    
-    <div class="card-body w-25">
+
+    <div class="card-body w-50">
         <h2 class="card-title">Caractéristiques</h2>
             <h4 class="card-subtitle mt-3">Type de logement: Villa, Maison</h4>
                 <h4 class="card-subtitle mt-3 mb-3"> Nombre de Pièces: T6 </h4>
                 <h4 class="card-subtitle mt-3 mb-3"> Surface: 200 m2 surface intérieur avec un jardin de 3000 m2 + piscine. </h4>
                 <h4 class="card-subtitle mt-3 mb-3"> Localisation: Nice, FRANCE </h4>
     </div>
-    <div class="card-body w-25">
+    <div class="card-body w-75">
         <h2 class="card-title">Description</h2>
             <h4 class="card-subtitle mt-3">Villa face à la mer avec piscine, se situant sur les hauteurs. Coin tranquille sans vis-à-vis situé dans la résidence huppé de Nice.
             </h4>
@@ -123,9 +123,10 @@
 
     <!--  contact  -->
 
-    <div class="card_contact w-25 p-3 bg-red">
-    <div class="card-header">
-        Contacter le vendeur
+    <div class="card_contact w-25 p-3 ">
+    <div class="card-header text-center">
+        <h4>Contacter le vendeur</h4>
+   
     </div>
     <div class="card-body">
     <div class="mb-3">
@@ -142,6 +143,7 @@
         </div>
         <button class="btn btn-success ms-3 contact" type="submit">Contacter l'agence pour plus d'information</button>
     </div>
+    </div> 
 </div>
 
     <div class=" d-flex flex-column justify-content-evenly bg-dark bg-gradient text-light p-4">
