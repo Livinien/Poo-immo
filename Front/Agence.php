@@ -49,7 +49,7 @@
 
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="../images/Villa_de_luxe.jpg" class="contain d-block w-100" alt="Images de logements">
+                <img src="./assets/images/Villa_de_luxe.jpg" class="contain d-block w-100" alt="Images de logements">
                 <div class="carousel-caption carousel d-none d-md-block">
                     <h2>Villa de Luxe</h2>
                     <p class="carousel-subtitle">Villa en face de la mer avec vue depuis la piscine.</p>
@@ -57,7 +57,7 @@
             </div>
 
             <div class="carousel-item">
-                <img src="../images/Villa_sur_la_cote.jpg" class="d-block w-100" alt="...">
+                <img src="./assets/images/Villa_sur_la_cote.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h2>Villa sur la Côte</h2>
                     <p class="carousel-subtitle">Villa en face de la mer avec vue depuis la piscine.</p>
@@ -65,7 +65,7 @@
             </div>
 
             <div class="carousel-item">
-                <img src="../images/Maison_du_lac.jpg" class="d-block w-100" alt="...">
+                <img src="./assets/images/Maison_du_lac.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h2>Maison du Lac</h2>
                     <p class="carousel-subtitle">Villa en face de la mer avec vue depuis la piscine.</p>
@@ -73,7 +73,7 @@
             </div>
 
             <div class="carousel-item">
-                <img src="../images/Maison_Addams.jpg" class="d-block w-100" alt="...">
+                <img src="./assets/images/Maison_Addams.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h2>Maison Addams</h2>
                     <p class="carousel-subtitle">Villa en face de la mer avec vue depuis la piscine.</p>
@@ -105,7 +105,7 @@
         <div class="row row-cols-4 mt-5">
             <div class="col mb-5">
                 <div class="card">
-                    <img src="../images/Villa_sur_la_cote.jpg" class="card-img-top" alt="...">
+                    <img src="./assets/images/Villa_sur_la_cote.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h2 class="card-title">Villa sur la Côte</h2>
                         <h4 class="card-subtitle mt-3">Marseille, FRANCE</h4>
@@ -115,7 +115,7 @@
             </div>
             <div class="col">
                 <div class="card">
-                    <img src="../images/Villa_de_luxe.jpg" class="card-img-top" alt="...">
+                    <img src="./assets/images/Villa_de_luxe.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h2 class="card-title">Villa sur la Côte</h2>
                         <h4 class="card-subtitle mt-3">Marseille, FRANCE</h4>
@@ -125,7 +125,7 @@
             </div>
             <div class="col">
                 <div class="card">
-                    <img src="../images/Maison_du_lac.jpg" class="card-img-top" alt="...">
+                    <img src="./assets/images/Maison_du_lac.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h2 class="card-title">Villa sur la Côte</h2>
                         <h4 class="card-subtitle mt-3">Marseille, FRANCE</h4>
@@ -135,7 +135,7 @@
             </div>
             <div class="col">
                 <div class="card">
-                    <img src="../images/Manoir_du_duc.jpg" class="card-img-top" alt="...">
+                    <img src="./assets/images/Manoir_du_duc.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h2 class="card-title">Villa sur la Côte</h2>
                         <h4 class="card-subtitle mt-3">Marseille, FRANCE</h4>
