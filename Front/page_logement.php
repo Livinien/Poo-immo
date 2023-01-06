@@ -105,6 +105,7 @@
                 <h4 class="card-subtitle mt-3 mb-3"> prix: 1 000 000 €</h4>
     </div>
 
+    
     <div class="card-body w-25">
         <h2 class="card-title">Caractéristiques</h2>
             <h4 class="card-subtitle mt-3">Type de logement: Villa, Maison</h4>
