@@ -1,0 +1,24 @@
+{
+  "name": "poo-immo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --style=compressed --watch Front/assets/scss/style.scss Front/assets/css/app.css "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Livinien/Poo-immo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Livinien/Poo-immo/issues"
+  },
+  "homepage": "https://github.com/Livinien/Poo-immo#readme",
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
+}
