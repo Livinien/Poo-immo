@@ -24,8 +24,10 @@
             <a class="navbar-brand text-light" href="./client.php">IMMOBELLO</a>
 
             <form class="d-flex">
-                <a href="inscription_front.php" class="btn btn-danger register-login" type="submit">Inscription</a>
-                <a href="connexion_front.php" class="btn btn-danger ms-3 register-login" type="submit">Connexion</a>
+                <button type="button" href="profil.php" class="btn btn-danger button-profile">
+                    <i class="icon-people bi bi-person-fill text-light"></i>
+                    <span class="text-center"> Mon Compte</span>
+                </button>
             </form>
         </div>
     </nav>
@@ -45,6 +47,7 @@
                 aria-label="Slide 4"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
                 aria-label="Slide 1"></button>
+
         </div>
 
         <div class="carousel-inner">
@@ -82,7 +85,7 @@
         </div>
 
 
-        <!-- BOUTON SUIVANT ET PRECEDENT -->
+        <!-- CARTE DES LOGEMENTS -->
 
         <button class="carousel-control-prev carousel-icon" type="button" data-bs-target="#carouselExampleCaptions"
             data-bs-slide="prev">
@@ -150,7 +153,7 @@
 
     <!-- FOOTER -->
 
-    <div class="d-flex flex-column justify-content-evenly bg-dark bg-gradient text-light p-4">
+    <div class=" d-flex flex-column justify-content-evenly bg-dark bg-gradient text-light p-4">
         <div class="d-flex justify-content-between">
             <div class="links-footer ms-5">
                 <h4>L'entreprise</h4>

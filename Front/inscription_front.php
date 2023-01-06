@@ -17,6 +17,17 @@
 
 <body>
 
+    <!-- HEADER - NAVBAR -->
+
+    <nav class="navbar p-3 bg-dark bg-gradient">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="./client.php">IMMOBELLO</a>
+        </div>
+    </nav>
+
+
+    <!-- FORMULAIRE D'INSCRIPTION -->
+
     <div class="formulaire-inscription d-flex justify-content-center">
         <form class="form-inscription text-center">
             <h1 class="title-inscription text-center">Inscription</h1>
@@ -46,6 +57,8 @@
                 <input type="password" class="form-control">
             </div>
 
+
+            <!-- BOUTON DE VALIDATION DU FORMULAIRE -->
 
             <div class="m-4 text-center">
                 <button type="submit" class="button-inscription btn btn-success">S'inscrire</button><br>

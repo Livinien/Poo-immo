@@ -17,6 +17,16 @@
 
 <body>
 
+    <!-- HEADER - NAVBAR -->
+
+    <nav class="navbar p-3 bg-dark bg-gradient">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="./client.php">IMMOBELLO</a>
+        </div>
+    </nav>
+
+    <!-- FORMULAIRE DE CONNEXION -->
+
     <div class="formulaire-connexion d-flex justify-content-center">
         <form class="form-connexion text-center">
             <h1 class="title-connexion text-center">Connexion</h1>
@@ -31,6 +41,7 @@
                 <input type="password" class="form-control">
             </div>
 
+            <!-- BOUTON DE VALIDATION DU FORMULAIRE -->
 
             <div class="m-5 text-center">
                 <button type="submit" class="button-connexion btn btn-success">Connexion</button><br>

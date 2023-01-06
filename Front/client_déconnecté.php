@@ -21,10 +21,10 @@
 
     <nav class="navbar p-3 bg-dark bg-gradient">
         <div class="container-fluid">
-            <a class="navbar-brand text-light" href="#">IMMOBELLO</a>
+            <a class="navbar-brand text-light" href="./client.php">IMMOBELLO</a>
             <form class="d-flex">
-                <button class="btn btn-danger register-login" type="submit">Inscription</button>
-                <button class="btn btn-danger ms-3 register-login" type="submit">Connexion</button>
+                <a href="inscription_front.php" class="btn btn-danger register-login" type="submit">Inscription</a>
+                <a href="connexion_front.php" class="btn btn-danger ms-3 register-login" type="submit">Connexion</a>
             </form>
         </div>
     </nav>
@@ -82,6 +82,7 @@
         </div>
 
 
+        <!-- CARTE DES LOGEMENTS -->
 
         <button class="carousel-control-prev carousel-icon" type="button" data-bs-target="#carouselExampleCaptions"
             data-bs-slide="prev">
@@ -147,6 +148,7 @@
     </div>
 
 
+    <!-- FOOTER -->
 
     <div class=" d-flex flex-column justify-content-evenly bg-dark bg-gradient text-light p-4">
         <div class="d-flex justify-content-between">
