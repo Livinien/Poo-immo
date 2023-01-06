@@ -21,7 +21,7 @@
 
     <nav class="navbar p-3 bg-dark bg-gradient">
         <div class="container-fluid">
-            <a class="navbar-brand text-light" href="./client.php">IMMOBELLO</a>
+            <a class="navbar-brand text-light" href="">IMMOBELLO</a>
         </div>
     </nav>
 
@@ -32,12 +32,12 @@
             <h1 class="title-connexion text-center">Connexion</h1>
 
             <div class="mt-5 row d-flex justify-content-center">
-                <label for="email" class="form-label">Email</label>
+                <label for="email" class="form-label-connexion">Email</label>
                 <input type="email" class="form-control">
             </div>
 
             <div class="mt-5 row row d-flex justify-content-center">
-                <label for="password" class="form-label">Mot de Passe</label>
+                <label for="password" class="form-label-connexion">Mot de Passe</label>
                 <input type="password" class="form-control">
             </div>
 

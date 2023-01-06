@@ -21,7 +21,7 @@
 
     <nav class="navbar p-3 bg-dark bg-gradient">
         <div class="container-fluid">
-            <a class="navbar-brand text-light" href="./client.php">IMMOBELLO</a>
+            <a class="navbar-brand text-light" href="">IMMOBELLO</a>
         </div>
     </nav>
 
@@ -33,27 +33,27 @@
             <h1 class="title-inscription text-center">Inscription</h1>
 
             <div class="mt-4 row d-flex justify-content-center">
-                <label for="prénom" class="form-label">Prénom</label>
+                <label for="prénom" class="form-label-inscription">Prénom</label>
                 <input type="text" class="form-control">
             </div>
 
             <div class="mt-4 row d-flex justify-content-center">
-                <label for="nom" class="form-label">Nom</label>
+                <label for="nom" class="form-label-inscription">Nom</label>
                 <input type="text" class="form-control">
             </div>
 
             <div class="mt-4 row d-flex justify-content-center">
-                <label for="email" class="form-label">Email</label>
+                <label for="email" class="form-label-inscription">Email</label>
                 <input type="email" class="form-control">
             </div>
 
             <div class=" mt-4 row row d-flex justify-content-center">
-                <label for="password1" class="form-label">Mot de Passe</label>
+                <label for="password1" class="form-label-inscription">Mot de Passe</label>
                 <input type="password" class="form-control">
             </div>
 
             <div class="mt-4 row row d-flex justify-content-center">
-                <label for="password2" class="form-label">Confirmer votre mot de passe</label>
+                <label for="password2" class="form-label-inscription">Confirmer votre mot de passe</label>
                 <input type="password" class="form-control">
             </div>
 
