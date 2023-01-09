@@ -21,7 +21,20 @@
 
     <nav class="navbar p-3 bg-dark bg-gradient">
         <div class="container-fluid">
-            <a class="navbar-brand text-light" href="./client.php">IMMOBELLO</a>
+            <div class="d-flex align-item-center ">
+                <a class="navbar-brand text-light" href="">IMMOBELLO</a>
+                <a href="inscription_front.php" class="btn btn-danger register-login" type="submit">+ Déposer une
+                    annonce
+                </a>
+            </div>
+
+
+            <!-- MODAL POUR AJOUTER UN LOGEMENT -->
+
+
+
+
+
 
             <form class="d-flex">
                 <a href="inscription_front.php" class="btn btn-danger register-login" type="submit">Inscription</a>
