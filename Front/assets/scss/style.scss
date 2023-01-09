@@ -49,15 +49,15 @@
 /* FORMULAIRE */
 
 .formulaire-connexion {
-    background-image: url("./assets/images/Image_connexion.png");
+    background-image: url("../images/Image_connexion.png");
     background-size: cover;
-    padding-bottom: 103px;
+    padding-bottom: 77px;
 }
 
 .form-connexion {
     background-color: #E77B59;
     padding: 5px;
-    margin-top: 101px;
+    margin-top: 53px;
     border-radius: 20px;
     width: 50%;
 }
@@ -71,7 +71,7 @@
     width: 80%;
 }
 
-.form-label {
+.form-label-connexion {
     color: #fff;
     margin-bottom: 10px;
 }
@@ -116,6 +116,10 @@
 .title-inscription {
     color: #fff;
     margin-top: 20px;
+}
+
+.form-label-inscription {
+    color: #fff;
 }
 
 .button-inscription {
@@ -165,7 +169,7 @@
 .form-control_profil{
     background-color: #d9d9d9;
 }
-.form-label_profil{
+.form-label{
     color: black;
 }
 

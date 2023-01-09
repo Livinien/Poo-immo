@@ -22,9 +22,7 @@
     <nav class="navbar p-3 bg-dark bg-gradient">
         <div class="container-fluid">
             <a class="navbar-brand text-light" href="./client.php">IMMOBELLO</a>
-            <button type="button" class="btn btn-danger register-login" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Déposer une annonce
-                </button>
+
             <form class="d-flex">
                 <a href="inscription_front.php" class="btn btn-danger register-login" type="submit">Inscription</a>
                 <a href="connexion_front.php" class="btn btn-danger ms-3 register-login" type="submit">Connexion</a>
