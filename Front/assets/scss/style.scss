@@ -30,6 +30,16 @@
     object-fit: contain; 
 }
 
+/* MODAL */
+
+.form-label-modal{
+    color: black;
+}
+.modal-title{
+    text-align: center !important;
+}
+
+
 
 
 
@@ -139,12 +149,12 @@
     margin-top: 20px;
 }
 
-.button-register {
+.button-register_profil {
     font-size: 20px;
     font-weight: bold;
     width: 25%;
 }
-.button-delete {
+.button-delete_profil {
     font-size: 20px;
     font-weight: bold;
     width: 25%;
@@ -152,10 +162,10 @@
     width: 300px;
 }
 
-.form-control{
+.form-control_profil{
     background-color: #d9d9d9;
 }
-.form-label{
+.form-label_profil{
     color: black;
 }
 
@@ -165,9 +175,25 @@
 /* FORMULAIRE */
 .card_contact{
     background-color: #FF7A7A;
+    float: right;
+    display: block;
+
+}
+.card-container_descript{
+    padding-left: 200px;
     
-.container{
-    display: flex;
-    flex-direction: end;
-    }
+}
+.card-container_contact{
+    //padding-right: 200px;
+    padding-top: 100px;
+ 
+    
+}
+
+.contact{
+    padding-top: 20px;
+}
+.card-body-container{
+    position: relative;
+    left: 10%;
 }

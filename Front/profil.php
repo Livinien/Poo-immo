@@ -22,22 +22,22 @@
             <img src="..." class="img-fluid" alt="Photo">
 
             <div class="mt-4 row d-flex justify-content-center">
-                <label for="prénom" class="form-label">Prénom</label>
-                <input type="text" class="form-control">
+                <label for="prénom" class="form-label_profil">Prénom</label>
+                <input type="text" class="form-control_profil">
             </div>
 
             <div class="mt-4 row d-flex justify-content-center">
-                <label for="nom" class="form-label">Nom</label>
-                <input type="text" class="form-control">
+                <label for="nom" class="form-label_profil">Nom</label>
+                <input type="text" class="form-control_profil">
             </div>
             <div class="mt-4 row row d-flex justify-content-center">
-                <label for="number" class="form-label">Téléphone</label>
-                <input type="number" class="form-control">
+                <label for="number" class="form-label_profil">Téléphone</label>
+                <input type="number" class="form-control_profil">
             </div>
 
             <div class="mt-4 row d-flex justify-content-center">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control">
+                <label for="email" class="form-label_profil">Email</label>
+                <input type="email" class="form-control_profil">
             </div>
 
             <div class=" mt-4 row row d-flex justify-content-center">
@@ -70,9 +70,9 @@
 
 
             <div class="m-4 text-center">
-                <button type="submit" class="button-register btn btn-success mt-5">Enregistrer</button>
+                <button type="submit" class="button-register_profil btn btn-success mt-5">Enregistrer</button>
                 <!-- Button trigger modal -->
-                <button type="button" class="button-delete btn btn-danger mt-5 " data-bs-toggle="modal"
+                <button type="button" class="button-delete_profil btn btn-danger mt-5 " data-bs-toggle="modal"
                     data-bs-target="#exampleModal">Supprimer mon Compte</button>
             </div>
         </form>

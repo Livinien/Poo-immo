@@ -22,28 +22,28 @@
     <nav class="navbar p-3 bg-dark bg-gradient">
         <div class="container-fluid">
             <a class="navbar-brand text-light" href="./client.php">IMMOBELLO</a>
-            <button type="button" class="btn btn-danger register-login" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            
+            <button type="button" class="btn btn-danger register-login" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
                 Déposer une annonce
                 </button>
+
             <form class="d-flex">
                 <a href="inscription_front.php" class="btn btn-danger register-login" type="submit">Inscription</a>
                 <a href="connexion_front.php" class="btn btn-danger ms-3 register-login" type="submit">Connexion</a>
                 
                 <!-- Button trigger modal DEPOSER UN LOGEMENT -->
-
-                
-
-                <!-- Modal AJOUT DU LOGEMENT-->
-                
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
+                          <!-- Modal AJOUT DU LOGEMENT-->
+                <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h1 class="modal-title fs-5 " id="exampleModalLabel">Ajouter un logement: </h1>
-                                
+                                <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Ajouter un logement: </h1>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                         <div class="modal-body bg-dark-subtle">
+                           
+                
+
 
                                 <!--BODY TITRE  -->
                         <div class="row bg-grey justify-content-evenly mb-3">
@@ -69,7 +69,7 @@
                             
                             <div class="col-md-5 border border-info  bg-info-subtle">
                                 
-                            <div class=""><h3 class="text-center mb-4 mt-4">Caractéristiques</h3>
+                                <div class=""><h3 class="text-center mb-4 mt-4">Caractéristiques</h3>
                                     <div class="container-fluid width:100% mb-3 ms-5">    
                                         <label for="exampleFormControlInput1" class="form-label-modal mb-2">Type de logement:</label>
                                         <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Nom">
@@ -92,7 +92,7 @@
 
                         <!--  BODY DESCRIPTION  -->
                         <div class="row justify-content-evenly">
-                            <div class="col-md-5 border border-info  bg-info-subtle">
+                        <div class="col-md-5 border border-info  bg-info-subtle">
                                 <div class=" border-1"><h3 class="text-center mb-4 mt-4">Description</h3>
                                     <div class="container-fluid width:100% mb-3 ms-5">    
                                     <div class="form-floating">
@@ -110,104 +110,55 @@
                         
                     <!--  BODY CONTACT  -->
 
-                            <div class="col-md-5  border border-info  bg-info-subtle">
-                                    <div class=" border-1"><h3 class="text-center mb-4 mt-4">Contacter</h3>
-                                        <div class="container-fluid width:100% mb-3 ms-5">    
-                                            <label for="exampleFormControlInput1" class="form-label-modal">Nom</label>
-                                            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Nom">
-                                        </div>
-                                        <div class="container-fluid width:100% mb-3 ms-5">    
-                                            <label for="exampleFormControlInput2" class="form-label-modal">Téléphone</label>
-                                            <input type="tel" class="form-control" id="exampleFormControlInput2" placeholder="Téléphone">
-                                        </div>
-                                        <div class="container-fluid width:100% mb-3 ms-5">    
-                                            <label for="exampleFormControlInput3" class="form-label-modal">Email address</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="name@example.com">
-                                        </div>
+                        <div class="col-md-5  border border-info  bg-info-subtle">
+                                <div class=" border-1"><h3 class="text-center mb-4 mt-4">Contacter</h3>
+                                    <div class="container-fluid width:100% mb-3 ms-5">    
+                                        <label for="exampleFormControlInput1" class="form-label-modal">Nom</label>
+                                        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Nom">
+                                    </div>
+                                    <div class="container-fluid width:100% mb-3 ms-5">    
+                                        <label for="exampleFormControlInput2" class="form-label-modal">Téléphone</label>
+                                        <input type="tel" class="form-control" id="exampleFormControlInput2" placeholder="Téléphone">
+                                    </div>
+                                    <div class="container-fluid width:100% mb-3 ms-5">    
+                                        <label for="exampleFormControlInput3" class="form-label-modal">Email address</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="name@example.com">
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-danger mt-5" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Supprimer</button>
 
-
-
-
-
-
-
-                            
-                            <!-- Modal -->
-                            <div class="modal fade pt-5" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2"
-                                aria-hidden="false">
-                                <div class="modal-dialog">
+                                    <button type="submit" class="button-register_modal btn btn-success mt-5">Enregistrer</button></div>
+                                
+                                    <button type="button" class="btn btn-secondary mt-5" data-bs-dismiss="modal">Close</button></div>
+                            </div>
+                            </div>
+                            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel2">Supprimer un logement</h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal2" aria-label="Close"></button>
+                                            <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Supprimer un logement</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
-                                        <div class="modal-body fw-bol">
+                                        <div class="modal-body">
                                             Êtes-vous sur de supprimer un logement ?
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-danger">Supprimer</button>
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="button-delete_modal btn btn-danger mt-5 " data-bs-toggle="modal2"
+                                                data-bs-target="#exampleModal2">Supprimer un logement</button>
+                                            
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                        </div>
-                
-                        <div class="modal-footer">
-                                
-                                <!-- Button trigger modal -->
-                            <button type="button" class="button-delete_modal btn btn-danger mt-5 " data-bs-toggle="modal2"
-                                data-bs-target="#exampleModal2">Supprimer un logement</button>
-                                
-                            <button type="button" class="btn btn-secondary mt-5" data-bs-dismiss="modal2">Close</button>
-                            <button type="submit" class="button-register_modal btn btn-success mt-5">Enregistrer</button>
-                                
-                        </div>
-                    
-                        <!-- refaire -->
-                        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                Show a second modal and hide this one with the button below.
-                            </div>
-                            <div class="modal-footer">
-                                <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open second modal</button>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                Hide this modal and show the first with the button below.
-                            </div>
-                            <div class="modal-footer">
-                                <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Open first modal</button>
-
-
-
-
-
+                    </div>
                 </div>
-                
+
             </form>
         </div>
     </nav>

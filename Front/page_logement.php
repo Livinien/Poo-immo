@@ -31,9 +31,10 @@
 
 
     <!-- CARROUSEL -->
-
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    
+    <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
         <div class="carousel-indicators" carousel-item active data-bs-interval="100">
+    
             <button type=" button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
@@ -46,10 +47,10 @@
                 aria-label="Slide 1"></button>
 
         </div>
-
+    
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="../images/Villa_sur_la_cote.jpg" class="contain d-block w-100" alt="Images de logements">
+                <img src="./assets/images/Villa_sur_la_cote.jpg" class="contain d-block w-100" alt="Images de logements">
                 <div class="carousel-caption carousel d-none d-md-block">
                     <h2>Villa de Luxe</h2>
                     <p class="carousel-subtitle">Villa en face de la mer avec vue depuis la piscine.</p>
@@ -57,7 +58,7 @@
             </div>
 
             <div class="carousel-item">
-                <img src="../images/int_sal_b.jpg" class="d-block w-100" alt="...">
+                <img src="./assets/images/int_sal_b.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h2>Villa sur la Côte</h2>
                     <p class="carousel-subtitle">Villa en face de la mer avec vue depuis la piscine.</p>
@@ -65,7 +66,7 @@
             </div>
 
             <div class="carousel-item">
-                <img src="../images/int_salon.jpg" class="d-block w-100" alt="...">
+                <img src="./assets/images/int_salon.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h2>Maison du Lac</h2>
                     <p class="carousel-subtitle">Villa en face de la mer avec vue depuis la piscine.</p>
@@ -73,16 +74,14 @@
             </div>
 
             <div class="carousel-item">
-                <img src="../images/int_cuis.jpg" class="d-block w-100" alt="...">
+                <img src="./assets/images/int_cuis.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h2>Maison Addams</h2>
                     <p class="carousel-subtitle">Villa en face de la mer avec vue depuis la piscine.</p>
                 </div>
             </div>
         </div>
-
-
-
+    </div>
         <button class="carousel-control-prev carousel-icon" type="button" data-bs-target="#carouselExampleCaptions"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -97,54 +96,66 @@
     </div>
 
 
-    <!-- CARTE DU LOGEMENT -->
-   
-    <div class="card-body w-25">
-        <h2 class="card-title">Villa de Luxe</h2>
-        <h4 class="card-subtitle mt-3">Surface 3500 m2 au total</h4>
-        <h4 class="card-subtitle mt-3 mb-3"> prix: 1 000 000 €</h4>
-    </div>
+  
 
     
-    <div class="card-body w-25">
-        <h2 class="card-title">Caractéristiques</h2>
-        <h4 class="card-subtitle mt-3">Type de logement: Villa, Maison</h4>
-        <h4 class="card-subtitle mt-3 mb-3"> Nombre de Pièces: T6 </h4>
-        <h4 class="card-subtitle mt-3 mb-3"> Surface: 200 m2 surface intérieur avec un jardin de 3000 m2 + piscine.
-        </h4>
-        <h4 class="card-subtitle mt-3 mb-3"> Localisation: Nice, FRANCE </h4>
-    </div>
-    <div class="card-body w-75">
-        <h2 class="card-title">Description</h2>
-        <h4 class="card-subtitle mt-3">Villa face à la mer avec piscine, se situant sur les hauteurs. Coin tranquille
-            sans vis-à-vis situé dans la résidence huppé de Nice.
-        </h4>
-        <h4 class="card-subtitle mt-3 mb-3"> A proximité des commerces, de la plage, du centre-ville, etc... </h4>
-
-    </div>
-
     <!--  contact  -->
+    <div class="card-container_contact col align-items-end">  
+        <div class="card_contact w-25 p-3 rounded-2">
+                <div class=" card-header text-center pt-2 pb-3">
+                    <h4>Contacter le vendeur</h4>
+                </div>
+                <div class="card-body-container">
+                    <div class="card-body">
+                        <div class="container-fluid width:100% mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Nom</label>
+                            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Nom">
+                            </div>
+                            <div class="mb-3">
+                            <label for="exampleFormControlInput2" class="form-label">Téléphone</label>
+                            <input type="tel" class="form-control" id="exampleFormControlInput2" placeholder="Téléphone">
+                            </div>
+                            <div class="mb-3">
+                            <label for="exampleFormControlInput3" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="name@example.com">
+                            </div>
+                    </div>
+                </div>
+                <div class="contact ">
+                    <button class="btn btn-success ms-2 rounded-2 " type="submit">Contacter l'agence pour plus d'information</button>
+                </div>
+            </div> 
+        </div>
+            
+    <!-- CARTE DU LOGEMENT -->
+    
+        <div class="card-container_descript col">
+            <div class="card-body col w-25">
+                <h2 class="card-title">Villa de Luxe</h2>
+                <h4 class="card-subtitle mt-3">Surface 3500 m2 au total</h4>
+                <h4 class="card-subtitle mt-3 mb-3"> prix: 1 000 000 €</h4>
+            </div>
 
-    <div class="card_contact w-25 p-3 bg-red">
-    <div class="card-header">
-        Contacter le vendeur
+            
+            <div class="card-body  w-25 pt-5 ">
+                <h2 class="card-title">Caractéristiques</h2>
+                <h4 class="card-subtitle mt-3">Type de logement: Villa, Maison</h4>
+                <h4 class="card-subtitle mt-3 mb-3"> Nombre de Pièces: T6 </h4>
+                <h4 class="card-subtitle mt-3 mb-3"> Surface: 200 m2 surface intérieur avec un jardin de 3000 m2 + piscine.
+                </h4>
+                <h4 class="card-subtitle mt-3 mb-3"> Localisation: Nice, FRANCE </h4>
+            </div>
+            <div class="card-body col w-75 pt-5 pb-5">
+                <h2 class="card-title">Description</h2>
+                <h4 class="card-subtitle mt-3">Villa face à la mer avec piscine, se situant sur les hauteurs. Coin tranquille
+                    sans vis-à-vis situé dans la résidence huppé de Nice.
+                </h4>
+                <h4 class="card-subtitle mt-3 mb-3"> A proximité des commerces, de la plage, du centre-ville, etc... </h4>
+            </div>
+
+        </div>
+    
     </div>
-    <div class="card-body">
-    <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Nom</label>
-        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Nom">
-        </div>
-        <div class="mb-3">
-        <label for="exampleFormControlInput2" class="form-label">Téléphone</label>
-        <input type="tel" class="form-control" id="exampleFormControlInput2" placeholder="Téléphone">
-        </div>
-        <div class="mb-3">
-        <label for="exampleFormControlInput3" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="name@example.com">
-        </div>
-        <button class="btn btn-success ms-3 contact" type="submit">Contacter l'agence pour plus d'information</button>
-    </div>
-</div>
 
     <div class=" d-flex flex-column justify-content-evenly bg-dark bg-gradient text-light p-4">
         <div class="d-flex justify-content-between">
@@ -161,7 +172,7 @@
                 <a href="#"><i class="bi bi-apple logo-apple"></i></a>
                 <a class="ms-2" href=""><i class="bi bi-android2 logo-android"></i></a>
             </div>
-
+            
             <div class="links-footer">
                 <h4>Services Pro</h4>
                 <a href="#">Tous nos services pro</a><br>
