@@ -19,16 +19,36 @@
 
     <!-- HEADER - NAVBAR -->
 
-    <nav class="navbar p-3 bg-dark bg-gradient">
+    <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand text-light" href="">IMMOBELLO</a>
+            <a class="navbar-brand text-light fw-bold p-3" href="agence.php">IMMOBELLO</a>
+            <button class="navbar-toggler border-light" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon "></span>
+            </button>
 
-            <form class="d-flex">
-                <button type="button" class="me-3 btn btn-danger fw-bold">Mon
-                    Compte</button>
+            <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header text-light">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">IMMOBELLO</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
 
-                <button type="submit" class="btn btn-danger fw-bold button-profile">Déconnexion</button>
-            </form>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light fw-bold" aria-current="page" href="profil.php">Mon
+                                Compte</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <button class="btn btn-danger text-light fw-bold" aria-current="page"
+                                href="agence.php">Déconnexion</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </nav>
 
@@ -105,9 +125,9 @@
 
     <div class="container text-center">
         <h2 class="logements mt-5">Nos Logements</h2>
-        <div class="row row-cols-4 mt-5">
+        <div class="row row-cols-1 row-cols-xl-4 row-cols-md-4">
             <div class="col mb-5">
-                <div class="card">
+                <div class="card mt-5">
                     <img src="./assets/images/Villa_sur_la_cote.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h2 class="card-title">Villa sur la Côte</h2>
@@ -117,7 +137,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card">
+                <div class="card mt-5">
                     <img src="./assets/images/Villa_de_luxe.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h2 class="card-title">Villa sur la Côte</h2>
@@ -127,7 +147,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card">
+                <div class="card mt-5">
                     <img src="./assets/images/Maison_du_lac.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h2 class="card-title">Villa sur la Côte</h2>
@@ -137,7 +157,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card">
+                <div class="card mt-5 mb-5">
                     <img src="./assets/images/Manoir_du_duc.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h2 class="card-title">Villa sur la Côte</h2>
@@ -151,32 +171,34 @@
     </div>
 
 
+
     <!-- FOOTER -->
 
-    <div class=" d-flex flex-column justify-content-evenly bg-dark bg-gradient text-light p-4">
-        <div class="d-flex justify-content-between">
-            <div class="links-footer ms-5">
+    <div class="d-flex flex-column justify-content-evenly bg-dark bg-gradient text-light p-4">
+        <div class="row mx-5">
+
+            <div class="links-footer col mt-5 mx-4 px-4">
                 <h4>L'entreprise</h4>
                 <a href="#">Qui sommes-nous ?</a><br>
                 <a href="#">Nous Contacter</a><br>
                 <a href="#">Nous Recrutons</a>
             </div>
 
-            <div class="links-footer">
+            <div class="links-footer col mt-5 mx-4 px-4">
                 <h4>Nos Applications</h4>
                 <a href="#">Découvrez nos applications</a><br>
                 <a href="#"><i class="bi bi-apple logo-apple"></i></a>
                 <a class="ms-2" href=""><i class="bi bi-android2 logo-android"></i></a>
             </div>
 
-            <div class="links-footer">
+            <div class="links-footer col mt-5 mx-4 px-4">
                 <h4>Services Pro</h4>
                 <a href="#">Tous nos services pro</a><br>
                 <a href="#">Accès client</a><br>
                 <a href="#">Mes annonces sur Immobello</a>
             </div>
 
-            <div class="links-footer me-5">
+            <div class="links-footer col mt-5 mx-4 px-4">
                 <h4>A Découvrir</h4>
                 <a href="#">Annuaire des professionnels</a><br>
                 <a href="#">Tout l'immobilier</a><br>

@@ -51,13 +51,13 @@
 .formulaire-connexion {
     background-image: url("../images/Image_connexion.png");
     background-size: cover;
-    padding-bottom: 77px;
+    padding-bottom: 52px;
 }
 
 .form-connexion {
     background-color: #E77B59;
     padding: 5px;
-    margin-top: 53px;
+    margin-top: 153px;
     border-radius: 20px;
     width: 50%;
 }
@@ -88,7 +88,36 @@
     margin-bottom: 50px;
 }
 
+@media(max-width: 1077px) {
 
+    .button-connexion {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 912px) {
+
+    .button-connexion {
+        width: 110px;
+    }
+}
+
+@media(max-width: 740px) {
+
+    .button-connexion {
+        width: 110px;
+    }
+}
+
+
+@media(max-width: 450px) {
+
+    .button-connexion {
+        font-size: 10px;
+        margin-left: -5px;
+        width: 80px;
+    }
+}
 
 
 
@@ -102,13 +131,13 @@
 .formulaire-inscription {
     background-image: url("../images/Image_inscription.jpg");
     background-size: cover;
-    padding-bottom: 22px;
+    padding-bottom: 70px;
 }
 
 .form-inscription {
     background-color: #E77B59;
     padding: 5px;
-    margin-top: 20px;
+    margin-top: 110px;
     border-radius: 20px;
     width: 60%;
 }
@@ -132,6 +161,39 @@
     color: #fff;
     font-weight: bold;
     margin-bottom: 50px;
+}
+
+
+
+@media(max-width: 1077px) {
+
+    .button-inscription {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 912px) {
+
+    .button-inscription {
+        width: 110px;
+    }
+}
+
+@media(max-width: 740px) {
+
+    .button-inscription {
+        width: 110px;
+    }
+}
+
+
+@media(max-width: 450px) {
+
+    .button-inscription {
+        font-size: 10px;
+        margin-left: -5px;
+        width: 80px;
+    }
 }
 
 

@@ -17,6 +17,42 @@
 
 <body>
 
+
+    <!-- HEADER PROFIL -->
+
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light fw-bold p-3" href="agence.php">IMMOBELLO</a>
+            <button class="navbar-toggler border-light" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header text-light">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">IMMOBELLO</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light fw-bold" aria-current="page"
+                                href="agence.php">Accueil</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active text-light fw-bold" aria-current="page"
+                                href="agence.php">Déconnexion</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <div class="formulaire-profil d-flex justify-content-center">
         <form class="form-profil text-center">
             <img src="..." class="img-fluid" alt="Photo">
@@ -78,6 +114,43 @@
         </form>
     </div>
 
+
+    <!-- FOOTER -->
+
+    <div class="d-flex flex-column justify-content-evenly bg-dark bg-gradient text-light p-4">
+        <div class="row mx-5">
+
+            <div class="links-footer col mt-5 mx-4 px-4">
+                <h4>L'entreprise</h4>
+                <a href="#">Qui sommes-nous ?</a><br>
+                <a href="#">Nous Contacter</a><br>
+                <a href="#">Nous Recrutons</a>
+            </div>
+
+            <div class="links-footer col mt-5 mx-4 px-4">
+                <h4>Nos Applications</h4>
+                <a href="#">Découvrez nos applications</a><br>
+                <a href="#"><i class="bi bi-apple logo-apple"></i></a>
+                <a class="ms-2" href=""><i class="bi bi-android2 logo-android"></i></a>
+            </div>
+
+            <div class="links-footer col mt-5 mx-4 px-4">
+                <h4>Services Pro</h4>
+                <a href="#">Tous nos services pro</a><br>
+                <a href="#">Accès client</a><br>
+                <a href="#">Mes annonces sur Immobello</a>
+            </div>
+
+            <div class="links-footer col mt-5 mx-4 px-4">
+                <h4>A Découvrir</h4>
+                <a href="#">Annuaire des professionnels</a><br>
+                <a href="#">Tout l'immobilier</a><br>
+                <a href="#">Toutes les villes</a><br>
+                <a href="#">Tous les départements</a><br>
+                <a href="#">Toutes les régions</a>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
