@@ -20,17 +20,122 @@
     <!-- HEADER - NAVBAR -->
 
     <nav class="navbar p-3 bg-dark bg-gradient">
-        <div class="container-fluid">
-            <div class="d-flex align-item-center ">
-                <a class="navbar-brand text-light" href="">IMMOBELLO</a>
-                <a href="inscription_front.php" class="btn btn-danger register-login" type="submit">+ Déposer une
-                    annonce
-                </a>
-            </div>
+        
 
 
             <!-- MODAL POUR AJOUTER UN LOGEMENT -->
 
+            <!-- Button trigger modal DEPOSER UN LOGEMENT -->
+                          <!-- Modal AJOUT DU LOGEMENT-->
+                          
+                          <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                        <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Ajouter un logement: </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                           
+                
+
+
+                                <!--BODY TITRE  -->
+                        <div class=" ms-5 row justify-content-evenly mb-3">
+                            <div class=" card-body col-md-5 rounded-5">
+                                
+                                <div class=""><h3 class="text-center mb-4 mt-4">Titre</h3>
+                                    <div class="container-fluid width:100% mb-3 ms-5">   
+                                        <label for="exampleFormControlInput1" class="form-label-modal mb-2">Titre de logement: </label>
+                                        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Titre">
+                                    </div> 
+
+                                    <div class="container-fluid width:100% mb-3 ms-5">    
+                                        <label for="exampleFormControlInput1" class="form-label-modal mb-2">Surface Total du logement: </label>
+                                        <input type="name" class="form-control" id="exampleFormControlInput2" placeholder="Surface Total">
+                                    </div>
+                                    <div class="container-fluid width:100% mb-3 ms-5">    
+                                        <label for="exampleFormControlInput1" class="form-label-modal mb-2">Prix du logement:</label>
+                                        <input type="name" class="form-control" id="exampleFormControlInput3" placeholder="Prix">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  BODY CARACTERISTIQUE  -->
+                            
+                            <div class="card-body ms-5 me-5 col-md-5 rounded-5  ">
+                                
+                            <div class=""><h3 class="text-center mb-4 mt-4">Caractéristiques</h3>
+                                    <div class="container-fluid width:100% mb-3 ms-5">    
+                                        <label for="exampleFormControlInput1" class="form-label-modal mb-2">Type de logement:</label>
+                                        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Nom">
+                                    </div>
+                                    <div class="container-fluid width:100% mb-3 ms-5">    
+                                        <label for="exampleFormControlInput1" class="form-label-modal mb-2">Nombre de Pièces: </label>
+                                        <input type="name" class="form-control" id="exampleFormControlInput2" placeholder="Nombre de Pièces">
+                                    </div>
+                                    <div class="container-fluid width:100% mb-3 ms-5">    
+                                        <label for="exampleFormControlInput1" class="form-label-modal mb-2">Surface du logement:</label>
+                                        <input type="name" class="form-control" id="exampleFormControlInput2" placeholder="Surface">
+                                    </div>
+                                    <div class="container-fluid width:100% mb-3 ms-5">    
+                                        <label for="exampleFormControlInput1" class="form-label-modal mb-2">Localication:</label>
+                                        <input type="name" class="form-control" id="exampleFormControlInput3" placeholder="Localication">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  BODY DESCRIPTION  -->
+                        <div class=" ms-5 row mt-5 justify-content-evenly">
+                        <div class=" card-body col-md-5 rounded-5  ">
+                                <div class=" border-1"><h3 class="text-center mb-4 mt-4">Description</h3>
+                                    <div class="container-fluid width:100% mb-3 ms-5">    
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                        
+                                    </div>
+                                    </div>
+                                    <div class="container-fluid width:100% mb-3 ms-5">    
+                                        <label class="input-text" for="inputFile02">Importer image</label>
+                                        <input type="file" class="form-control" id="inputFile02">
+                                    </div>
+                                
+                                </div>
+                            </div>
+                        
+                    <!--  BODY CONTACT  -->
+
+                        <div class="card-body ms-5 me-5 col-md-5  rounded-5 ">
+                                <div class=" border-1"><h3 class="text-center mb-4 mt-4">Contacter</h3>
+                                    <div class="container-fluid width:100% mb-3 ms-5">    
+                                        <label for="exampleFormControlInput1" class="form-label-modal">Nom</label>
+                                        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Nom">
+                                    </div>
+                                    <div class="container-fluid width:100% mb-3 ms-5">    
+                                        <label for="exampleFormControlInput2" class="form-label-modal">Téléphone</label>
+                                        <input type="tel" class="form-control" id="exampleFormControlInput2" placeholder="Téléphone">
+                                    </div>
+                                    <div class="container-fluid width:100% mb-3 ms-5">    
+                                        <label for="exampleFormControlInput3" class="form-label-modal">Email address</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="name@example.com">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">           
+                        <button type="submit" class="button-register_modal btn btn-success mt-5">Enregistrer</button>
+                    </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            </form>
+        </div>
+    </nav>
 
 
 
@@ -54,17 +159,17 @@
                         <div class="offcanvas-body">
                             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                                 <li class="nav-item">
-                                    <a class="nav-link active text-light fw-bold" aria-current="page"
-                                        href="inscription_front.php">Inscription</a>
+                                    <button class="nav-link text-light fw-bold btn btn-dark p-2" aria-current="page"
+                                        href="inscription_front.php">Inscription</button>
                                 </li>
 
                                 <li class="nav-item ">
-                                    <a class="nav-link text-light fw-bold" href="connexion_front.php">Connexion</a>
+                                    <button class="nav-link text-light fw-bold btn btn-dark p-2" href="connexion_front.php">Connexion</button>
                                 </li>
 
                                 <li class="nav-item ">
-                                    <a class="nav-link text-light fw-bold" href="modal"> Déposer une
-                                        annonce</a>
+                                    <button class="nav-link text-light fw-bold text-decoration-none btn btn-dark p-2" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"> Déposer une
+                                        annonce</button>
                                 </li>
                             </ul>
                         </div>
@@ -72,219 +177,7 @@
                 </div>
             </nav>
 
-            <!-- Button trigger modal DEPOSER UN LOGEMENT -->
-
-
-
-            <!-- Modal AJOUT DU LOGEMENT-->
-
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5 " id="exampleModalLabel">Ajouter un logement: </h1>
-
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body bg-dark-subtle">
-
-                            <!--BODY TITRE  -->
-                            <div class="row bg-grey justify-content-evenly mb-3">
-                                <div class="col-md-5 border border-info  bg-info-subtle">
-
-                                    <div class="">
-                                        <h3 class="text-center mb-4 mt-4">Titre</h3>
-                                        <div class="container-fluid width:100% mb-3 ms-5">
-                                            <label for="exampleFormControlInput1" class="form-label-modal mb-2">Titre de
-                                                logement: </label>
-                                            <input type="name" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="Titre">
-                                        </div>
-
-                                        <div class="container-fluid width:100% mb-3 ms-5">
-                                            <label for="exampleFormControlInput1" class="form-label-modal mb-2">Surface
-                                                Total du logement: </label>
-                                            <input type="name" class="form-control" id="exampleFormControlInput2"
-                                                placeholder="Surface Total">
-                                        </div>
-                                        <div class="container-fluid width:100% mb-3 ms-5">
-                                            <label for="exampleFormControlInput1" class="form-label-modal mb-2">Prix
-                                                du logement:</label>
-                                            <input type="name" class="form-control" id="exampleFormControlInput3"
-                                                placeholder="Prix">
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--  BODY CARACTERISTIQUE  -->
-
-                                <div class="col-md-5 border border-info  bg-info-subtle">
-
-                                    <div class="">
-                                        <h3 class="text-center mb-4 mt-4">Caractéristiques</h3>
-                                        <div class="container-fluid width:100% mb-3 ms-5">
-                                            <label for="exampleFormControlInput1" class="form-label-modal mb-2">Type
-                                                de logement:</label>
-                                            <input type="name" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="Nom">
-                                        </div>
-                                        <div class="container-fluid width:100% mb-3 ms-5">
-                                            <label for="exampleFormControlInput1" class="form-label-modal mb-2">Nombre
-                                                de Pièces: </label>
-                                            <input type="name" class="form-control" id="exampleFormControlInput2"
-                                                placeholder="Nombre de Pièces">
-                                        </div>
-                                        <div class="container-fluid width:100% mb-3 ms-5">
-                                            <label for="exampleFormControlInput1" class="form-label-modal mb-2">Surface
-                                                du logement:</label>
-                                            <input type="name" class="form-control" id="exampleFormControlInput2"
-                                                placeholder="Surface">
-                                        </div>
-                                        <div class="container-fluid width:100% mb-3 ms-5">
-                                            <label for="exampleFormControlInput1"
-                                                class="form-label-modal mb-2">Localication:</label>
-                                            <input type="name" class="form-control" id="exampleFormControlInput3"
-                                                placeholder="Localication">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--  BODY DESCRIPTION  -->
-                            <div class="row justify-content-evenly">
-                                <div class="col-md-5 border border-info  bg-info-subtle">
-                                    <div class=" border-1">
-                                        <h3 class="text-center mb-4 mt-4">Description</h3>
-                                        <div class="container-fluid width:100% mb-3 ms-5">
-                                            <div class="form-floating">
-                                                <textarea class="form-control" placeholder="Leave a comment here"
-                                                    id="floatingTextarea2" style="height: 100px"></textarea>
-                                                <label for="floatingTextarea2">Comments</label>
-                                            </div>
-                                        </div>
-                                        <div class="container-fluid width:100% mb-3 ms-5">
-                                            <label class="input-text" for="inputFile02">Importer image</label>
-                                            <input type="file" class="form-control" id="inputFile02">
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <!--  BODY CONTACT  -->
-
-                                <div class="col-md-5  border border-info  bg-info-subtle">
-                                    <div class=" border-1">
-                                        <h3 class="text-center mb-4 mt-4">Contacter</h3>
-                                        <div class="container-fluid width:100% mb-3 ms-5">
-                                            <label for="exampleFormControlInput1" class="form-label-modal">Nom</label>
-                                            <input type="name" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="Nom">
-                                        </div>
-                                        <div class="container-fluid width:100% mb-3 ms-5">
-                                            <label for="exampleFormControlInput2"
-                                                class="form-label-modal">Téléphone</label>
-                                            <input type="tel" class="form-control" id="exampleFormControlInput2"
-                                                placeholder="Téléphone">
-                                        </div>
-                                        <div class="container-fluid width:100% mb-3 ms-5">
-                                            <label for="exampleFormControlInput3" class="form-label-modal">Email
-                                                address</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput3"
-                                                placeholder="name@example.com">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-
-
-
-
-
-                            <!-- Modal -->
-                            <div class="modal fade pt-5" id="exampleModal2" tabindex="-1"
-                                aria-labelledby="exampleModalLabel2" aria-hidden="false">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel2">Supprimer un
-                                                logement</h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal2"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body fw-bol">
-                                            Êtes-vous sur de supprimer un logement ?
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-danger">Supprimer</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="modal-footer">
-
-                            <!-- Button trigger modal -->
-                            <button type="button" class="button-delete_modal btn btn-danger mt-5 "
-                                data-bs-toggle="modal2" data-bs-target="#exampleModal2">Supprimer un
-                                logement</button>
-
-                            <button type="button" class="btn btn-secondary mt-5" data-bs-dismiss="modal2">Close</button>
-                            <button type="submit"
-                                class="button-register_modal btn btn-success mt-5">Enregistrer</button>
-
-                        </div>
-
-                        <!-- refaire -->
-                        <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
-                            aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        Show a second modal and hide this one with the button below.
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2"
-                                            data-bs-toggle="modal">Open second modal</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
-                            aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-                            <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        Hide this modal and show the first with the button below.
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle"
-                                            data-bs-toggle="modal">Back to first</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Open
-                            first modal</button>
-                    </div>
-                    </form>
-                </div>
-    </nav>
-
+           
 
     <!-- CARROUSEL -->
 

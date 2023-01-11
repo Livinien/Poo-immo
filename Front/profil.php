@@ -18,74 +18,41 @@
 <body>
 
 
-    <!-- HEADER PROFIL -->
 
-    <nav class="navbar navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand text-light fw-bold p-3" href="agence.php">IMMOBELLO</a>
-            <button class="navbar-toggler border-light" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                            <!-- FORMULAIRE DU PROFIL -->
 
-            <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header text-light">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">IMMOBELLO</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active text-light fw-bold" aria-current="page"
-                                href="agence.php">Accueil</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link active text-light fw-bold" aria-current="page"
-                                href="agence.php">Déconnexion</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
 
     <div class="formulaire-profil d-flex justify-content-center">
-        <form class="form-profil text-center">
+        <form class="form-profil ">
+            <div class="text-center">
             <img src="..." class="img-fluid" alt="Photo">
-
-            <div class="mt-4 row d-flex justify-content-center">
-                <label for="prénom" class="form-label_profil">Prénom</label>
+            </div>
+            <div class="formulaire_input mt-4 row d-flex justify-content-center ">
+                <label for="prénom" class="form-label_profil g-0">Prénom</label>
                 <input type="text" class="form-control_profil">
             </div>
 
-            <div class="mt-4 row d-flex justify-content-center">
-                <label for="nom" class="form-label_profil">Nom</label>
+            <div class=" mt-4 row d-flex justify-content-center ">
+                <label for="nom" class="form-label_profil g-0">Nom</label>
                 <input type="text" class="form-control_profil">
             </div>
-            <div class="mt-4 row row d-flex justify-content-center">
-                <label for="number" class="form-label_profil">Téléphone</label>
-                <input type="number" class="form-control_profil">
+            <div class=" mt-4 row row d-flex justify-content-center">
+                <label for="number" class="form-label_profil g-0">Téléphone</label>
+                <input type="varchar" class="form-control_profil">
             </div>
 
-            <div class="mt-4 row d-flex justify-content-center">
-                <label for="email" class="form-label_profil">Email</label>
+            <div class=" mt-4 row d-flex justify-content-center">
+                <label for="email" class="form-label_profil g-0">Email</label>
                 <input type="email" class="form-control_profil">
             </div>
 
             <div class=" mt-4 row row d-flex justify-content-center">
-                <label for="password1" class="form-label">Mot de Passe</label>
-                <input type="password" class="form-control">
+                <label for="password1" class="form-label_profil g-0">Mot de Passe</label>
+                <input type="password" class="form-control_profil">
             </div>
 
-
-
-
-
             <!-- Modal -->
+            
             <div class="modal fade pt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog">
@@ -108,7 +75,7 @@
             <div class="m-4 text-center">
                 <button type="submit" class="button-register_profil btn btn-success mt-5">Enregistrer</button>
                 <!-- Button trigger modal -->
-                <button type="button" class="button-delete_profil btn btn-danger mt-5 " data-bs-toggle="modal"
+                <button type="button" class="button-delete_profil btn btn-danger mt-5" data-bs-toggle="modal"
                     data-bs-target="#exampleModal">Supprimer mon Compte</button>
             </div>
         </form>
