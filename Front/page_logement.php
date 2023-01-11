@@ -130,22 +130,22 @@
 
     <!-- CARTE DU LOGEMENT -->
 
-    <div class="card-container_descript col mt-5">
+    <div class="card-container_descript col ms-5 mt-5">
         <div class="card-body_modif col w-50">
             <h2 class="card-title fw-bold">Villa de Luxe</h2>
-            <h4 class="card-subtitle mt-3 pt-2">Surface 3500 m2 au total</h4>
-            <h4 class="card-subtitle mt-3 mb-3"> prix: 1 000 000 €</h4>
+            <h4 class="card-subtitle mt-3 pt-2">Surface : 3500 m2 au total</h4>
+            <h4 class="card-subtitle mt-3 mb-3"> Prix : 1 000 000 €</h4>
         </div>
 
 
         <!-- BODY PAGE LOGEMENT CARACTERISTIQUES  -->
-        <div class="card-body_modif w-75 pt-5 ">
+        <div class="card-body_modif w-100 pt-5 ">
             <h2 class="card-title fw-bold ">Caractéristiques</h2>
-            <h4 class="card-subtitle mt-3 pt-2">Type de logement: Villa, Maison</h4>
-            <h4 class="card-subtitle mt-3 mb-3"> Nombre de Pièces: T6 </h4>
-            <h4 class="card-subtitle mt-3 mb-3"> Surface: 200 m2 surface intérieur avec un jardin de 3000 m2 + piscine.
+            <h4 class="card-subtitle mt-3 pt-2">Type de logement : Villa, Maison</h4>
+            <h4 class="card-subtitle mt-3 mb-3"> Nombre de Pièces : T6 </h4>
+            <h4 class="card-subtitle mt-3 mb-3"> Surface : 200 m2 surface intérieur avec un jardin de 3000 m2 + piscine.
             </h4>
-            <h4 class="card-subtitle mt-3 mb-3"> Localisation: Nice, FRANCE </h4>
+            <h4 class="card-subtitle mt-3 mb-3"> Localisation : Nice, FRANCE </h4>
         </div>
 
 
@@ -323,47 +323,69 @@
 
 
 
-    <!-- BODY PAGE LOGEMENT - CONTACT  -->
+    <!-- MODAL POUR CONTACTER LE VENDEUR -->
 
     <div>
-        <form class="contact_card w-50 mt-5">
-            <h2 class="fw-bold">Contacter le vendeur</h2>
-            <div class="mb-3 mt-4">
-                <label for="exampleInputEmail1" class="form-label">Nom</label>
-                <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="NomHelp">
+        <div class="modal fade" id="modal-contact-vendeur" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
 
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Coordonnées du Vendeur</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="mb-3 mt-4">
+                            <label for="exampleInputEmail1" class="form-label contact-vendeur-label">Nom</label>
+                            <input type="name" class="form-control contact-vendeur-input" id="exampleInputEmail1"
+                                aria-describedby="NomHelp">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label contact-vendeur-label">Téléphone</label>
+                            <input type="tel" class="form-control contact-vendeur-input" id="exampleInputEmail1"
+                                aria-describedby="TelephoneHelp">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label contact-vendeur-label">Email</label>
+                            <input type="email" class="form-control contact-vendeur-input" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+
+                        <div class="contact mb-3">
+                            <label for="textarea" class="form-label contact-vendeur-label">Commentaire</label>
+                            <textarea class="form-control contact-vendeur-input" id="floatingTextarea2"
+                                style="height: 100px"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success fw-bold">Contacter</button>
+                    </div>
+                </div>
             </div>
-
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Téléphone</label>
-                <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="TelephoneHelp">
-
-            </div>
-
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
-
-            <div class="contact mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-
-            <button type="submit" class="btn btn-success rounded-2 fw-bold mt-3">Contacter l'agence</button>
-        </form>
-
+        </div>
 
 
         <!-- BOUTONS MODIFICATIONS ET SUPPRIMER DES MODALS -->
 
         <div class="modal-footer_logement text-center mb-5 mt-5">
-            <button type="button" class="btn btn-warning register-login fw-bold text-white mt-5"
+            <button type="button" class="btn btn-success button-vendeur fw-bold mt-5" data-bs-toggle="modal"
+                data-bs-target="#modal-contact-vendeur">
+                Contacter le Vendeur
+            </button>
+
+            <button type="button" class="btn btn-warning button-modifs  fw-bold text-white me-5 ms-5 mt-5"
                 data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
                 Modifications
             </button>
-            <button type="submit" class="button-supp_logement_modal btn btn-danger ms-5 fw-bold mt-5"
-                data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer l'annonce</button>
+
+            <button type="submit" class="button-supp_logement_modal btn btn-danger button-supprimer fw-bold mt-5"
+                data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer l'annonce
+            </button>
         </div>
     </div>
 

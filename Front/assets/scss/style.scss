@@ -231,7 +231,7 @@
     width: 300px;
 }
 
-.form-control_profil{
+.form-control_profil {
     background-color: #d9d9d9;
     border-radius: 5px;
     height: 40px;
@@ -297,14 +297,11 @@
 /* PAGE LOGEMENT */
 
 /* FORMULAIRE */
-.card_contact{
+.card_contact {
     background-color: #FF7A7A;
 
 }
-.card-container_descript{
-    padding-left: 200px;
-    
-}
+
 .card-container_contact{
     //padding-right: 200px;
     padding-top: 100px;
@@ -313,11 +310,11 @@
 .contact{
     padding-top: 20px;
 }
-.card-body-container{
+.card-body-container {
     position: relative;
     left: 10%;
 }
-.button-modif_logement{
+.button-modif_logement {
     font-size: 20px;
     font-weight: bold;
     width: 25%;
@@ -329,11 +326,11 @@
     font-weight: bold;
     width: 25%;
 }
-.button-modif_logement{
+.button-modif_logement {
     color: #ffffff;
     font-weight: bold;
 }
-.button-supp_logement{
+.button-supp_logement {
     font-weight: bold;
 }
 .contact_card{
@@ -341,9 +338,46 @@
     margin-left: 200px;
 }
 
+.contact-vendeur-label {
+    margin-left: 47px;
+}
+.contact-vendeur-input {
+    margin: auto;
+}
+
+@media(max-width: 710px) {
+    
+    .button-vendeur {
+      margin: 0 0 0 30px;
+    }
+
+    .button-supprimer {
+      margin: 0 30px 0 0;
+    }
+}
+
 @media(max-width: 630px) {
+
     .card-body_modif {
       font-size: 14px;
     }
-  }
+}
+
+@media(max-width: 470px) {
+
+    .button-vendeur {
+        margin: 0 0 0 30px;
+      }
+  
+      .button-supprimer {
+        margin: 0 30px 0 0;
+      }
+}
+
+@media(max-width: 450px) {
+
+    .button-vendeur {
+        margin: 0 0 0 30px;
+      }
+}
 
