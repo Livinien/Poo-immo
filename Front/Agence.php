@@ -20,164 +20,189 @@
     <!-- HEADER - NAVBAR -->
 
     <nav class="navbar p-3 bg-dark bg-gradient">
-        
 
 
-            <!-- MODAL POUR AJOUTER UN LOGEMENT -->
 
-            <!-- Button trigger modal DEPOSER UN LOGEMENT -->
-                          <!-- Modal AJOUT DU LOGEMENT-->
-                          
-                          <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                    <div class="modal-dialog modal-dialog-centered modal-xl">
-                        <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Ajouter un logement: </h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                           
-                
+        <!-- MODAL POUR AJOUTER UN LOGEMENT -->
+
+        <!-- Button trigger modal DEPOSER UN LOGEMENT -->
+
+        <!-- Modal AJOUT DU LOGEMENT-->
+
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Ajouter un logement: </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
 
 
-                                <!--BODY TITRE  -->
+
+
+                        <!--BODY TITRE  -->
                         <div class=" ms-5 row justify-content-evenly mb-3">
                             <div class=" card-body col-md-5 rounded-5">
-                                
-                                <div class=""><h3 class="text-center mb-4 mt-4">Titre</h3>
-                                    <div class="container-fluid width:100% mb-3 ms-5">   
-                                        <label for="exampleFormControlInput1" class="form-label-modal mb-2">Titre de logement: </label>
-                                        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Titre">
-                                    </div> 
 
-                                    <div class="container-fluid width:100% mb-3 ms-5">    
-                                        <label for="exampleFormControlInput1" class="form-label-modal mb-2">Surface Total du logement: </label>
-                                        <input type="name" class="form-control" id="exampleFormControlInput2" placeholder="Surface Total">
+                                <div class="">
+                                    <h3 class="text-center mb-4 mt-4">Titre</h3>
+                                    <div class="container-fluid width:100% mb-3 ms-5">
+                                        <label for="exampleFormControlInput1" class="form-label-modal mb-2">Titre de
+                                            logement: </label>
+                                        <input type="name" class="form-control" id="exampleFormControlInput1">
                                     </div>
-                                    <div class="container-fluid width:100% mb-3 ms-5">    
-                                        <label for="exampleFormControlInput1" class="form-label-modal mb-2">Prix du logement:</label>
-                                        <input type="name" class="form-control" id="exampleFormControlInput3" placeholder="Prix">
+
+                                    <div class="container-fluid width:100% mb-3 ms-5">
+                                        <label for="exampleFormControlInput1" class="form-label-modal mb-2">Surface
+                                            Total du logement: </label>
+                                        <input type="name" class="form-control" id="exampleFormControlInput2">
+                                    </div>
+                                    <div class="container-fluid width:100% mb-3 ms-5">
+                                        <label for="exampleFormControlInput1" class="form-label-modal mb-2">Prix du
+                                            logement:</label>
+                                        <input type="name" class="form-control" id="exampleFormControlInput3">
                                     </div>
                                 </div>
                             </div>
+
+
+
                             <!--  BODY CARACTERISTIQUE  -->
-                            
+
                             <div class="card-body ms-5 me-5 col-md-5 rounded-5  ">
-                                
-                            <div class=""><h3 class="text-center mb-4 mt-4">Caractéristiques</h3>
-                                    <div class="container-fluid width:100% mb-3 ms-5">    
-                                        <label for="exampleFormControlInput1" class="form-label-modal mb-2">Type de logement:</label>
-                                        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Nom">
+
+                                <div class="">
+                                    <h3 class="text-center mb-4 mt-4">Caractéristiques</h3>
+                                    <div class="container-fluid width:100% mb-3 ms-5">
+                                        <label for="exampleFormControlInput1" class="form-label-modal mb-2">Type de
+                                            logement:</label>
+                                        <input type="name" class="form-control" id="exampleFormControlInput1">
                                     </div>
-                                    <div class="container-fluid width:100% mb-3 ms-5">    
-                                        <label for="exampleFormControlInput1" class="form-label-modal mb-2">Nombre de Pièces: </label>
-                                        <input type="name" class="form-control" id="exampleFormControlInput2" placeholder="Nombre de Pièces">
+                                    <div class="container-fluid width:100% mb-3 ms-5">
+                                        <label for="exampleFormControlInput1" class="form-label-modal mb-2">Nombre de
+                                            Pièces: </label>
+                                        <input type="name" class="form-control" id="exampleFormControlInput2">
                                     </div>
-                                    <div class="container-fluid width:100% mb-3 ms-5">    
-                                        <label for="exampleFormControlInput1" class="form-label-modal mb-2">Surface du logement:</label>
-                                        <input type="name" class="form-control" id="exampleFormControlInput2" placeholder="Surface">
+                                    <div class="container-fluid width:100% mb-3 ms-5">
+                                        <label for="exampleFormControlInput1" class="form-label-modal mb-2">Surface du
+                                            logement:</label>
+                                        <input type="name" class="form-control" id="exampleFormControlInput2">
                                     </div>
-                                    <div class="container-fluid width:100% mb-3 ms-5">    
-                                        <label for="exampleFormControlInput1" class="form-label-modal mb-2">Localication:</label>
-                                        <input type="name" class="form-control" id="exampleFormControlInput3" placeholder="Localication">
+                                    <div class="container-fluid width:100% mb-3 ms-5">
+                                        <label for="exampleFormControlInput1"
+                                            class="form-label-modal mb-2">Localication:</label>
+                                        <input type="name" class="form-control" id="exampleFormControlInput3">
                                     </div>
                                 </div>
                             </div>
                         </div>
 
+
+
                         <!--  BODY DESCRIPTION  -->
+
                         <div class=" ms-5 row mt-5 justify-content-evenly">
-                        <div class=" card-body col-md-5 rounded-5  ">
-                                <div class=" border-1"><h3 class="text-center mb-4 mt-4">Description</h3>
-                                    <div class="container-fluid width:100% mb-3 ms-5">    
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                                        
+                            <div class=" card-body col-md-5 rounded-5  ">
+                                <div class=" border-1">
+                                    <h3 class="text-center mb-4 mt-4">Description</h3>
+                                    <div class="container-fluid width:100% mb-3 ms-5">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" id="floatingTextarea2"
+                                                style="height: 100px"></textarea>
+
+                                        </div>
                                     </div>
-                                    </div>
-                                    <div class="container-fluid width:100% mb-3 ms-5">    
+                                    <div class="container-fluid width:100% mb-3 ms-5">
                                         <label class="input-text" for="inputFile02">Importer image</label>
                                         <input type="file" class="form-control" id="inputFile02">
                                     </div>
-                                
+
                                 </div>
                             </div>
-                        
-                    <!--  BODY CONTACT  -->
 
-                        <div class="card-body ms-5 me-5 col-md-5  rounded-5 ">
-                                <div class=" border-1"><h3 class="text-center mb-4 mt-4">Contacter</h3>
-                                    <div class="container-fluid width:100% mb-3 ms-5">    
+
+
+                            <!--  BODY CONTACT  -->
+
+                            <div class="card-body ms-5 me-5 col-md-5  rounded-5 ">
+                                <div class=" border-1">
+                                    <h3 class="text-center mb-4 mt-4">Contacter</h3>
+                                    <div class="container-fluid width:100% mb-3 ms-5">
                                         <label for="exampleFormControlInput1" class="form-label-modal">Nom</label>
-                                        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Nom">
+                                        <input type="name" class="form-control" id="exampleFormControlInput1">
                                     </div>
-                                    <div class="container-fluid width:100% mb-3 ms-5">    
+                                    <div class="container-fluid width:100% mb-3 ms-5">
                                         <label for="exampleFormControlInput2" class="form-label-modal">Téléphone</label>
-                                        <input type="tel" class="form-control" id="exampleFormControlInput2" placeholder="Téléphone">
+                                        <input type="tel" class="form-control" id="exampleFormControlInput2">
                                     </div>
-                                    <div class="container-fluid width:100% mb-3 ms-5">    
-                                        <label for="exampleFormControlInput3" class="form-label-modal">Email address</label>
-                                        <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="name@example.com">
+                                    <div class="container-fluid width:100% mb-3 ms-5">
+                                        <label for="exampleFormControlInput3" class="form-label-modal">Email
+                                            address</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput3">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="modal-footer">           
+                    <div class="modal-footer">
                         <button type="submit" class="button-register_modal btn btn-success mt-5">Enregistrer</button>
                     </div>
 
-                    </div>
                 </div>
-
             </div>
 
-            </form>
+        </div>
+
+        </form>
         </div>
     </nav>
 
 
 
 
-            <nav class="navbar navbar-dark bg-dark fixed-top">
-                <div class="container-fluid">
-                    <a class="navbar-brand text-light fw-bold p-3" href="agence.php">IMMOBELLO</a>
-                    <button class="navbar-toggler border-light" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                        <span class="navbar-toggler-icon "></span>
-                    </button>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light fw-bold p-3" href="agence.php">IMMOBELLO</a>
+            <button class="navbar-toggler border-light" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon "></span>
+            </button>
 
-                    <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar"
-                        aria-labelledby="offcanvasNavbarLabel">
-                        <div class="offcanvas-header text-light">
-                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">IMMOBELLO</h5>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                <li class="nav-item">
-                                    <button class="nav-link text-light fw-bold btn btn-dark p-2" aria-current="page"
-                                        href="inscription_front.php">Inscription</button>
-                                </li>
-
-                                <li class="nav-item ">
-                                    <button class="nav-link text-light fw-bold btn btn-dark p-2" href="connexion_front.php">Connexion</button>
-                                </li>
-
-                                <li class="nav-item ">
-                                    <button class="nav-link text-light fw-bold text-decoration-none btn btn-dark p-2" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"> Déposer une
-                                        annonce</button>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+            <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header text-light">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">IMMOBELLO</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
                 </div>
-            </nav>
 
-           
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <button class="nav-link text-light fw-bold btn btn-dark p-2" aria-current="page"
+                                href="inscription_front.php">Inscription</button>
+                        </li>
+
+                        <li class="nav-item ">
+                            <button class="nav-link text-light fw-bold btn btn-dark p-2"
+                                href="connexion_front.php">Connexion</button>
+                        </li>
+
+                        <li class="nav-item ">
+                            <button class="nav-link text-light fw-bold text-decoration-none btn btn-dark p-2"
+                                data-bs-target="#exampleModalToggle" data-bs-toggle="modal"> Déposer une
+                                annonce</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
 
     <!-- CARROUSEL -->
 
