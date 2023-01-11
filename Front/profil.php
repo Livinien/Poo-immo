@@ -17,39 +17,40 @@
 
 <body>
 
+
+                            <!-- FORMULAIRE DU PROFIL -->
+
     <div class="formulaire-profil d-flex justify-content-center">
-        <form class="form-profil text-center">
+        <form class="form-profil ">
+            <div class="text-center">
             <img src="..." class="img-fluid" alt="Photo">
-
-            <div class="mt-4 row d-flex justify-content-center">
-                <label for="prénom" class="form-label_profil">Prénom</label>
+            </div>
+            <div class="formulaire_input mt-4 row d-flex justify-content-center ">
+                <label for="prénom" class="form-label_profil g-0">Prénom</label>
                 <input type="text" class="form-control_profil">
             </div>
 
-            <div class="mt-4 row d-flex justify-content-center">
-                <label for="nom" class="form-label_profil">Nom</label>
+            <div class=" mt-4 row d-flex justify-content-center ">
+                <label for="nom" class="form-label_profil g-0">Nom</label>
                 <input type="text" class="form-control_profil">
             </div>
-            <div class="mt-4 row row d-flex justify-content-center">
-                <label for="number" class="form-label_profil">Téléphone</label>
-                <input type="number" class="form-control_profil">
+            <div class=" mt-4 row row d-flex justify-content-center">
+                <label for="number" class="form-label_profil g-0">Téléphone</label>
+                <input type="varchar" class="form-control_profil">
             </div>
 
-            <div class="mt-4 row d-flex justify-content-center">
-                <label for="email" class="form-label_profil">Email</label>
+            <div class=" mt-4 row d-flex justify-content-center">
+                <label for="email" class="form-label_profil g-0">Email</label>
                 <input type="email" class="form-control_profil">
             </div>
 
             <div class=" mt-4 row row d-flex justify-content-center">
-                <label for="password1" class="form-label">Mot de Passe</label>
-                <input type="password" class="form-control">
+                <label for="password1" class="form-label_profil g-0">Mot de Passe</label>
+                <input type="password" class="form-control_profil">
             </div>
 
-
-
-
-
             <!-- Modal -->
+            
             <div class="modal fade pt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog">
@@ -72,7 +73,7 @@
             <div class="m-4 text-center">
                 <button type="submit" class="button-register_profil btn btn-success mt-5">Enregistrer</button>
                 <!-- Button trigger modal -->
-                <button type="button" class="button-delete_profil btn btn-danger mt-5 " data-bs-toggle="modal"
+                <button type="button" class="button-delete_profil btn btn-danger mt-5" data-bs-toggle="modal"
                     data-bs-target="#exampleModal">Supprimer mon Compte</button>
             </div>
         </form>

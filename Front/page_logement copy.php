@@ -52,7 +52,7 @@
             <div class="carousel-item active  ">
                 <img src="./assets/images/Villa_sur_la_cote.jpg" class="contain d-block w-100" alt="Images de logements">
                 <div class="carousel-caption carousel d-none d-md-block">
-                    <h2 class="fw-bold">Villa de Luxe</h2>
+                    <h2>Villa de Luxe</h2>
                     <p class="carousel-subtitle">Villa en face de la mer avec vue depuis la piscine.</p>
                 </div>
             </div>
@@ -95,30 +95,69 @@
         </button>
     </div>
 
-    <!-- CARTE DU LOGEMENT -->
+
+  
+
     
-        <div class="card-container_descript col mt-5">
+    
+
+
+                            <!-- CARTE DU LOGEMENT -->
+
+    
+        <div class="card-container_descript row row-cols-3 mt-5">
             <div class="card-body_modif col w-50">
-                <h2 class="card-title fw-bold">Villa de Luxe</h2>
-                <h4 class="card-subtitle mt-3 pt-2">Surface 3500 m2 au total</h4>
+                <h2 class="card-title">Villa de Luxe</h2>
+                <h4 class="card-subtitle mt-3">Surface 3500 m2 au total</h4>
                 <h4 class="card-subtitle mt-3 mb-3"> prix: 1 000 000 €</h4>
             </div>
-                    
-                        <!-- BODY PAGE LOGEMENT CARACTERISTIQUE  -->
-            <div class="card-body_modif w-75 pt-5 ">
-                <h2 class="card-title fw-bold ">Caractéristiques</h2>
-                <h4 class="card-subtitle mt-3 pt-2">Type de logement: Villa, Maison</h4>
+
+
+
+             <!-- BODY PAGE LOGEMENT CONTACT  -->
+
+             <div class="col w-50">
+            <form class="contact_card "><h4>Contacter le vendeur</h4>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Nom</label>
+                    <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="NomHelp">
+         
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Téléphone</label>
+                    <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="TelephoneHelp" >
+         
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="contact mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                    <button type="submit" class="btn btn-success ms-2 rounded-2 fw-bold mt-(">Contacter l'agence pour plus d'information</button>
+            </form>
+        </div>
+
+                              <!-- BODY PAGE LOGEMENT CARACTERISTIQUE  -->
+            
+            <div class="card-body_modif col w-50 ">
+                <h2 class="card-title">Caractéristiques</h2>
+                <h4 class="card-subtitle mt-3">Type de logement: Villa, Maison</h4>
                 <h4 class="card-subtitle mt-3 mb-3"> Nombre de Pièces: T6 </h4>
                 <h4 class="card-subtitle mt-3 mb-3"> Surface: 200 m2 surface intérieur avec un jardin de 3000 m2 + piscine.
                 </h4>
                 <h4 class="card-subtitle mt-3 mb-3"> Localisation: Nice, FRANCE </h4>
             </div>
 
-                    <!-- BODY DESCRIPTION CARD -->
 
-            <div class="card-body_modif col w-75 pt-5 pb-5">
-                <h2 class="card-title fw-bold">Description</h2>
-                <h4 class="card-subtitle mt-3 pt-2">Villa face à la mer avec piscine, se situant sur les hauteurs. Coin tranquille
+                       
+                                            <!-- BODY DESCRIPTION CARD -->
+
+            <div class="card-body_modif col w-100 pt-5 pb-5">
+                <h2 class="card-title">Description</h2>
+                <h4 class="card-subtitle mt-3">Villa face à la mer avec piscine, se situant sur les hauteurs. Coin tranquille
                     sans vis-à-vis situé dans la résidence huppé de Nice.
                 </h4>
                 <h4 class="card-subtitle mt-3 mb-3"> A proximité des commerces, de la plage, du centre-ville, etc... </h4>
@@ -128,9 +167,23 @@
     
     </div>
 
-                <!-- MODICATION LOGEMENT MODAL UN LOGEMENT  -->
 
-       
+    
+
+                                 <!--    bouton de modification et de suppression -->
+
+    <div class="modal-footer_logement text-center mb-5 mt-5">  
+        <button type="button" class="btn btn-warning register-login fw-bold text-white mt-5" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+            Modifications
+        </button>          
+        <button type="submit" class="button-supp_logement_modal btn btn-danger ms-5 fw-bold mt-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Supprimer l'annonce
+        </button>
+                
+    </div>
+
+
+                        <!-- MODICATION LOGEMENT MODAL UN LOGEMENT  -->
 
             
                 <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
@@ -242,7 +295,8 @@
             </div>
 
 
-      <!-- SUPPRIMER UN LOGEMENT -->
+                        <!-- SUPPRIMER UN LOGEMENT -->
+
             
       <div class="modal fade pt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
@@ -261,73 +315,33 @@
                     </div>
                 </div>
             </div>
-
-
-           
-
-            <!-- BODY PAGE LOGEMENT CONTACT  -->
-        <div>    
-            <form class="contact_card w-50 mt-5"><h2 class="fw-bold">Contacter le vendeur</h2>
-                <div class="mb-3 mt-4">
-                    <label for="exampleInputEmail1" class="form-label">Nom</label>
-                    <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="NomHelp">
          
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Téléphone</label>
-                    <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="TelephoneHelp" >
-         
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="contact mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                    <button type="submit" class="btn btn-success rounded-2 fw-bold mt-3">Contacter l'agence</button>
-                </form>
-
-
-
-                <!--    bouton de modification et de suppression -->
-
-                <div class="modal-footer_logement text-center mb-5 mt-5">  
-                    <button type="button" class="btn btn-warning register-login fw-bold text-white mt-5" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
-                        Modifications
-                    </button>          
-                    <button type="submit" class="button-supp_logement_modal btn btn-danger ms-5 fw-bold mt-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer l'annonce</button>
-                </div>
-            </div>
-
-
                             <!-- FOOTER -->
     
     <div class=" d-flex flex-column justify-content-evenly bg-dark bg-gradient text-light p-4">
         <div class="d-flex justify-content-between">
-            <div class="links-footer ms-5 col">
+            <div class="links-footer ms-5">
                 <h4>L'entreprise</h4>
                 <a href="#">Qui sommes-nous ?</a><br>
                 <a href="#">Nous Contacter</a><br>
                 <a href="#">Nous Recrutons</a>
             </div>
 
-            <div class="links-footer col">
+            <div class="links-footer">
                 <h4>Nos Applications</h4>
                 <a href="#">Découvrez nos applications</a><br>
                 <a href="#"><i class="bi bi-apple logo-apple"></i></a>
                 <a class="ms-2" href=""><i class="bi bi-android2 logo-android"></i></a>
             </div>
             
-            <div class="links-footer col">
+            <div class="links-footer">
                 <h4>Services Pro</h4>
                 <a href="#">Tous nos services pro</a><br>
                 <a href="#">Accès client</a><br>
                 <a href="#">Mes annonces sur Immobello</a>
             </div>
 
-            <div class="links-footer col me-5">
+            <div class="links-footer me-5">
                 <h4>A Découvrir</h4>
                 <a href="#">Annuaire des professionnels</a><br>
                 <a href="#">Tout l'immobilier</a><br>

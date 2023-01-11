@@ -33,21 +33,22 @@
                 
                 <!-- Button trigger modal DEPOSER UN LOGEMENT -->
                           <!-- Modal AJOUT DU LOGEMENT-->
+                          
                 <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                     <div class="modal-dialog modal-dialog-centered modal-xl">
                         <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Ajouter un logement: </h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                        <div class="modal-body bg-dark-subtle">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Ajouter un logement: </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
                            
                 
 
 
                                 <!--BODY TITRE  -->
-                        <div class="row bg-grey justify-content-evenly mb-3">
-                            <div class="col-md-5 border border-info  bg-info-subtle">
+                        <div class=" ms-5 row justify-content-evenly mb-3">
+                            <div class=" card-body col-md-5 rounded-5">
                                 
                                 <div class=""><h3 class="text-center mb-4 mt-4">Titre</h3>
                                     <div class="container-fluid width:100% mb-3 ms-5">   
@@ -67,9 +68,9 @@
                             </div>
                             <!--  BODY CARACTERISTIQUE  -->
                             
-                            <div class="col-md-5 border border-info  bg-info-subtle">
+                            <div class="card-body ms-5 me-5 col-md-5 rounded-5  ">
                                 
-                                <div class=""><h3 class="text-center mb-4 mt-4">Caractéristiques</h3>
+                            <div class=""><h3 class="text-center mb-4 mt-4">Caractéristiques</h3>
                                     <div class="container-fluid width:100% mb-3 ms-5">    
                                         <label for="exampleFormControlInput1" class="form-label-modal mb-2">Type de logement:</label>
                                         <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Nom">
@@ -91,13 +92,13 @@
                         </div>
 
                         <!--  BODY DESCRIPTION  -->
-                        <div class="row justify-content-evenly">
-                        <div class="col-md-5 border border-info  bg-info-subtle">
+                        <div class=" ms-5 row mt-5 justify-content-evenly">
+                        <div class=" card-body col-md-5 rounded-5  ">
                                 <div class=" border-1"><h3 class="text-center mb-4 mt-4">Description</h3>
                                     <div class="container-fluid width:100% mb-3 ms-5">    
                                     <div class="form-floating">
                                         <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                                        <label for="floatingTextarea2">Comments</label>
+                                        
                                     </div>
                                     </div>
                                     <div class="container-fluid width:100% mb-3 ms-5">    
@@ -110,7 +111,7 @@
                         
                     <!--  BODY CONTACT  -->
 
-                        <div class="col-md-5  border border-info  bg-info-subtle">
+                        <div class="card-body ms-5 me-5 col-md-5  rounded-5 ">
                                 <div class=" border-1"><h3 class="text-center mb-4 mt-4">Contacter</h3>
                                     <div class="container-fluid width:100% mb-3 ms-5">    
                                         <label for="exampleFormControlInput1" class="form-label-modal">Nom</label>
@@ -128,36 +129,18 @@
                             </div>
                         </div>
                     </div>
-                                <div class="modal-footer">
-                                    <button class="btn btn-danger mt-5" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Supprimer</button>
 
-                                    <button type="submit" class="button-register_modal btn btn-success mt-5">Enregistrer</button></div>
+                    <div class="modal-footer">
+                                    
+                        <button type="submit" class="button-register_modal btn btn-success mt-5">Enregistrer</button>
                                 
-                                    <button type="button" class="btn btn-secondary mt-5" data-bs-dismiss="modal">Close</button></div>
-                            </div>
-                            </div>
-                            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-                                <div class="modal-dialog modal-dialog-centered">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Supprimer un logement</h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            Êtes-vous sur de supprimer un logement ?
-                                        </div>
-                                        <div class="modal-footer">
-                                            <!-- Button trigger modal -->
-                                            <button type="button" class="button-delete_modal btn btn-danger mt-5 " data-bs-toggle="modal2"
-                                                data-bs-target="#exampleModal2">Supprimer un logement</button>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        
+                    </div>
 
                     </div>
                 </div>
+
+</div>
 
             </form>
         </div>

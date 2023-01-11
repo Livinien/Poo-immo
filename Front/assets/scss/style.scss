@@ -38,7 +38,10 @@
 .modal-title{
     text-align: center !important;
 }
-
+.card-body{
+    background-color: #fef3db;
+    
+}
 
 
 
@@ -51,13 +54,13 @@
 .formulaire-connexion {
     background-image: url("../images/Image_connexion.png");
     background-size: cover;
-    padding-bottom: 77px;
+    padding-bottom: 22px;
 }
 
 .form-connexion {
     background-color: #E77B59;
     padding: 5px;
-    margin-top: 53px;
+    margin-top: 100px;
     border-radius: 20px;
     width: 50%;
 }
@@ -145,7 +148,7 @@
     padding: 5px;
     margin-top: 20px;
     border-radius: 20px;
-    width: 60%;
+    width: 90%;
 }
 
 .title-profil {
@@ -168,19 +171,48 @@
 
 .form-control_profil{
     background-color: #d9d9d9;
+    border-radius: 5px;
+    height: 40px;
+    border: none;
 }
-.form-label{
-    color: black;
+.form-label_profil{
+    color: black;   
 }
 
+/* RESPONSIVE BOUTTON */
+@media(max-width: 940px) {
+    .button-delete_profil {
+      width: 150px;
+      
+    }
 
+    .button-register_profil {
+        width: 150px;
+      }
+  }
+
+  @media(max-width: 630px) {
+    .button-delete_profil {
+      width: 257px;
+      
+    }
+
+    .button-register_profil {
+        width: 150px;
+      }
+  }
+
+
+
+
+
+
+  
 /* PAGE LOGEMENT */
 
 /* FORMULAIRE */
 .card_contact{
     background-color: #FF7A7A;
-    float: right;
-    display: block;
 
 }
 .card-container_descript{
@@ -201,3 +233,33 @@
     position: relative;
     left: 10%;
 }
+.button-modif_logement{
+    font-size: 20px;
+    font-weight: bold;
+    width: 25%;
+    margin-left: 200px;
+    width: 300px;
+}
+.button-supp_logement {
+    font-size: 20px;
+    font-weight: bold;
+    width: 25%;
+}
+.button-modif_logement{
+    color: #ffffff;
+    font-weight: bold;
+}
+.button-supp_logement{
+    font-weight: bold;
+}
+.contact_card{
+    width: 30%;
+    margin-left: 200px;
+}
+
+@media(max-width: 630px) {
+    .card-body_modif {
+      font-size: 14px;
+    }
+  }
+
