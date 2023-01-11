@@ -30,19 +30,18 @@
     object-fit: contain; 
 }
 
+
 /* MODAL */
 
-.form-label-modal{
+.form-label-modal {
     color: black;
 }
-.modal-title{
+.modal-title {
     text-align: center !important;
 }
-.card-body{
+.card-body {
     background-color: #fef3db;
-    
 }
-
 
 
 
@@ -242,28 +241,52 @@
     color: black;   
 }
 
+
+
 /* RESPONSIVE BOUTTON */
+
 @media(max-width: 940px) {
-    .button-delete_profil {
-      width: 150px;
-      
-    }
 
     .button-register_profil {
         width: 150px;
       }
   }
 
-  @media(max-width: 630px) {
+
+@media(max-width: 630px) {
+    
     .button-delete_profil {
-      width: 257px;
-      
+        width: 257px;
+        
     }
 
     .button-register_profil {
         width: 150px;
-      }
-  }
+
+    }
+}
+
+@media(max-width: 490px) {
+
+    .button-delete_profil {
+        margin-right: 15px;
+        
+    }
+}
+
+
+@media(max-width: 330px) {
+
+    .button-delete_profil {
+        font-size: 15px;
+        margin-right: 17px;
+        width: 70%;
+    }
+
+    .button-register_profil {
+        font-size: 15px;
+    }
+}
 
 
 
@@ -285,8 +308,6 @@
 .card-container_contact{
     //padding-right: 200px;
     padding-top: 100px;
- 
-    
 }
 
 .contact{
