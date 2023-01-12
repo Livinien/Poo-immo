@@ -1,3 +1,10 @@
+<?php ob_start() ?>
+<?php 
+    $content=ob_get_clean();
+    require "agence.php";
+?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -368,6 +375,15 @@
                 </div>
             </div>
         </div>
+
+
+        
+                            <!-- APPEL DE LA MODAL DE L'AGENCE -->
+
+    <div class="container_modal_agence"> 
+      <?= $modal ?>                 
+    <?= $content ?>
+    </div> 
 
 
         <!-- BOUTONS MODIFICATIONS ET SUPPRIMER DES MODALS -->

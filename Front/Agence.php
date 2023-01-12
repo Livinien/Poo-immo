@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -26,6 +28,7 @@
         <!-- Button trigger modal DEPOSER UN LOGEMENT -->
 
         <!-- Modal AJOUT DU LOGEMENT-->
+      
 
         <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
             tabindex="-1">
@@ -42,7 +45,7 @@
 
                         <!-- MODAL TITRE  -->
 
-                        <div class="container">
+                        <div class="container" id="#modal<?php echo $k; ?>" rel="<?php echo $k; ?>">
                             <div class="row">
                                 <div class="card-body col-md-5 m-3 rounded-5">
                                     <div class="">
@@ -152,7 +155,6 @@
             </form>
         </div>
     </nav>
-
 
 
     <!-- MENU SLIDER VENANT ALLANT DE DROITE À GAUCHE -->
@@ -265,8 +267,9 @@
     </div>
 
 
-    <!-- CARTE DES LOGEMENTS -->
 
+    <!-- CARTE DES LOGEMENTS -->
+   
     <div class="container text-center">
         <h2 class="logements mt-5">Nos Logements</h2>
         <div class="row row-cols-1 row-cols-xl-4 row-cols-md-4">
@@ -313,8 +316,12 @@
         </div>
     </div>
     </div>
+                                
 
-
+    <div class="container_modal">
+    
+    <?= $content ?>
+    </div>
     <!-- FOOTER -->
 
     <div class="d-flex flex-column justify-content-evenly bg-dark bg-gradient text-light p-4">
