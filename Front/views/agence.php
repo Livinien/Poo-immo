@@ -32,13 +32,13 @@
             <div class="modal-dialog modal-dialog-centered modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Ajouter un logement: </h1>
+                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Ajouter un logement </h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
+
+
+
                     <div class="modal-body">
-
-
-
 
                         <!-- MODAL TITRE  -->
 
@@ -49,7 +49,7 @@
                                         <h3 class="text-center m-4 mb-4 mt-4">Titre</h3>
                                         <div class="container-fluid mb-3 ms-4">
                                             <label for="exampleFormControlInput1" class="form-label-modal mb-2">Titre de
-                                                logement: </label>
+                                                logement </label>
                                             <input type="name" class="form-control" id="exampleFormControlInput1">
                                         </div>
 

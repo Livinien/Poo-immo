@@ -17,8 +17,6 @@
 
 <body>
 
-
-
     <!-- FORMULAIRE DU PROFIL -->
 
     <div class="formulaire-profil d-flex justify-content-center">

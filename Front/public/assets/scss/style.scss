@@ -53,7 +53,7 @@
 .formulaire-connexion {
     background-image: url("../images/Image_connexion.png");
     background-size: cover;
-    padding-bottom: 52px;
+    padding-bottom: 50px;
 
 }
 
@@ -363,21 +363,7 @@
     }
 }
 
-@media(max-width: 470px) {
 
-    .button-vendeur {
-        margin: 0 0 0 30px;
-      }
-  
-      .button-supprimer {
-        margin: 0 30px 0 0;
-      }
-}
 
-@media(max-width: 450px) {
 
-    .button-vendeur {
-        margin: 0 0 0 30px;
-      }
-}
 
