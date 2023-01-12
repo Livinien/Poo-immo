@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./assets/css/app.css">
 
 
-    <title>Immobello - Page_Logement</title>
+    <title>IMMOBELLO - Page Logement</title>
 
 </head>
 
@@ -181,7 +181,7 @@
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modifier un logement: </h1>
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modifier un logement </h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
@@ -387,21 +387,25 @@
 
 
         <!-- BOUTONS MODIFICATIONS ET SUPPRIMER DES MODALS -->
+        <div>
+            <div class="row">
+                <div class="modal-footer_logement text-center mb-5 mt-5">
+                    <button type="button" class="btn btn-success button-vendeur fw-bold mt-5" data-bs-toggle="modal"
+                        data-bs-target="#modal-contact-vendeur">
+                        Contacter le Vendeur
+                    </button>
 
-        <div class="modal-footer_logement text-center mb-5 mt-5">
-            <button type="button" class="btn btn-success button-vendeur fw-bold mt-5" data-bs-toggle="modal"
-                data-bs-target="#modal-contact-vendeur">
-                Contacter le Vendeur
-            </button>
+                    <button type="button" class="btn btn-warning button-modifs  fw-bold text-white me-5 ms-5 mt-5"
+                        data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                        Modifications
+                    </button>
 
-            <button type="button" class="btn btn-warning button-modifs  fw-bold text-white me-5 ms-5 mt-5"
-                data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
-                Modifications
-            </button>
-
-            <button type="submit" class="button-supp_logement_modal btn btn-danger button-supprimer fw-bold mt-5"
-                data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer l'annonce
-            </button>
+                    <button type="submit"
+                        class="button-supp_logement_modal btn btn-danger button-supprimer fw-bold mt-5"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer l'annonce
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 
