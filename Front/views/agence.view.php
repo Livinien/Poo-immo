@@ -26,7 +26,7 @@
         <!-- MODAL POUR AJOUTER UN LOGEMENT -->
 
         <!-- Button trigger modal DEPOSER UN LOGEMENT -->
-
+        <div id="div2"><?php echo rand(10,100); ?></div>
         <!-- Modal AJOUT DU LOGEMENT-->
       
 
@@ -318,11 +318,23 @@
     </div>
     </div>
                                 
+    <?php 
+for($k=1;$k<=2;$k++){
+?>  
+<div class="modalIdBoucle" id="#modal<?php echo $k; ?>" rel="<?php echo $k; ?>"> 
+      <span class="#modal<?php echo $k; ?>"></span>
+<script>
 
-    <div class="container_modal">
-    
-    <?= $content ?>
-    </div>
+        var modal = $('div.modalIdBoucle').children().attr('class');
+        alert(modal);
+        $(modal).on('hidden.bs.modal', function(){
+                            $('#relaoadDiv').load('tableauTest.php');
+        });
+</script>
+</div>  
+<?php } ?>`
+<dv id="div2"><?php echo rand(10,100); ?></div>
+
     <!-- FOOTER -->
 
     <div class="d-flex flex-column justify-content-evenly bg-dark bg-gradient text-light p-4">

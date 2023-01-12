@@ -1,11 +1,5 @@
-<?php ob_start() ?>
-<?php 
-    $content=ob_get_clean();
-    require "agence.php";
-?>
-
-
 <!DOCTYPE html>
+
 <html lang="fr">
 
 <head>
@@ -380,35 +374,14 @@
         
                             <!-- APPEL DE LA MODAL DE L'AGENCE -->
 
-    <div class="container_modal_agence"> 
-      <?= $modal ?>                 
-    <?= $content ?>
-    </div> 
+                            
+  
 
-
-        <!-- BOUTONS MODIFICATIONS ET SUPPRIMER DES MODALS -->
-        <div>
-            <div class="row">
-                <div class="modal-footer_logement text-center mb-5 mt-5">
-                    <button type="button" class="btn btn-success button-vendeur fw-bold mt-5" data-bs-toggle="modal"
-                        data-bs-target="#modal-contact-vendeur">
-                        Contacter le Vendeur
-                    </button>
-
-                    <button type="button" class="btn btn-warning button-modifs fw-bold text-white me-5 ms-5 mt-5"
-                        data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
-                        Modifications
-                    </button>
-
-                    <button type="submit"
-                        class="button-supp_logement_modal btn btn-danger button-supprimer fw-bold mt-5"
-                        data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer l'annonce
-                    </button>
-                </div>
-            </div>
-        </div>
+    <?php ob_start() ?>
+    <div class="#modal">
+    
+        <?= $content ?>
     </div>
-
 
     <!-- FOOTER -->
 
