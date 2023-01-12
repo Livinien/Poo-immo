@@ -9,18 +9,18 @@ $visiteurController = new VisiteurController();
 
 try {
     if(empty($_GET['page'])){
-        $page = "accueil";
+        $page = "agence";
     } else {
         $url = explode("/", filter_var($_GET['page'],FILTER_SANITIZE_URL));
         $page = $url[0];
     }
 
     switch($page){
-        case "accueil" : $visiteurController->accueil();
+        case "agence" : $visiteurController->agence();
         break;
         case "compte" : 
             switch($url[1]){
-                case "profil": $visiteurController->accueil();
+                case "profil": $visiteurController->agence();
                 break;
             }
         break;

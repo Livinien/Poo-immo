@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../public/assets/css/app.css">
 
 
-    <title>Immobello - Accueil</title>
+    <title>IMMOBELLO - Accueil</title>
 
 </head>
 
