@@ -28,7 +28,7 @@
 
                               <li class="nav-item">
                                   <a class="nav-link active text-light fw-bold" aria-current="page"
-                                      href="inscription_front.php">Inscription</a>
+                                      href="inscription_front.view.php">Inscription</a>
                               </li>
                           </ul>
                       </div>

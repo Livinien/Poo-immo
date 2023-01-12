@@ -15,7 +15,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="../public/assets/css/app.css">
 
 
     <title>IMMOBELLO - Page Logement</title>
@@ -87,7 +87,7 @@
         <div class="carousel-inner">
 
             <div class="carousel-item active">
-                <img src="./assets/images/Villa_sur_la_cote.jpg" class="contain d-block w-100"
+                <img src="../public/assets/images/Villa_sur_la_cote.jpg" class="contain d-block w-100"
                     alt="Images de logements">
 
                 <div class="carousel-caption carousel d-none d-md-block">
@@ -97,7 +97,7 @@
             </div>
 
             <div class="carousel-item">
-                <img src="./assets/images/int_sal_b.jpg" class="d-block w-100" alt="...">
+                <img src="../public/assets/images/int_sal_b.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h2>Villa sur la Côte</h2>
                     <p class="carousel-subtitle">Villa en face de la mer avec vue depuis la piscine.</p>
@@ -105,7 +105,7 @@
             </div>
 
             <div class="carousel-item">
-                <img src="./assets/images/int_salon.jpg" class="d-block w-100" alt="...">
+                <img src="../public/assets/images/int_salon.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h2>Maison du Lac</h2>
                     <p class="carousel-subtitle">Villa en face de la mer avec vue depuis la piscine.</p>
@@ -113,7 +113,7 @@
             </div>
 
             <div class="carousel-item">
-                <img src="./assets/images/int_cuis.jpg" class="d-block w-100" alt="...">
+                <img src="../public/assets/images/int_cuis.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h2>Maison Addams</h2>
                     <p class="carousel-subtitle">Villa en face de la mer avec vue depuis la piscine.</p>
@@ -395,7 +395,7 @@
                         Contacter le Vendeur
                     </button>
 
-                    <button type="button" class="btn btn-warning button-modifs  fw-bold text-white me-5 ms-5 mt-5"
+                    <button type="button" class="btn btn-warning button-modifs fw-bold text-white me-5 ms-5 mt-5"
                         data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
                         Modifications
                     </button>
