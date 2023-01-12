@@ -1,7 +1,7 @@
 <?php
 require_once("controllers/Toolbox.class.php");
 
-class MainController{
+class MainController {
 
     protected function genererPage($data){
         extract($data);
@@ -13,7 +13,7 @@ class MainController{
 
     
     
-    protected function pageErreur($msg){
+    protected function pageErreur($msg) {
         $data_page = [
             "page_description" => "Page permettant de gérer les erreurs",
             "page_title" => "Page d'erreur",
