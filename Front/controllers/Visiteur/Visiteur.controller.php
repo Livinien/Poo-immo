@@ -20,6 +20,10 @@
         ];
         $this->genererPage($data_page);
     }
+    
+
+    public function pageErreur($msg) {
+        parent::pageError($msg);
     }
 
 ?>

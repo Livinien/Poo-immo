@@ -12,7 +12,6 @@ class MainController{
     }
 
     
-
     
     protected function pageErreur($msg){
         $data_page = [
