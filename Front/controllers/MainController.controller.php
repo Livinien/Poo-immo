@@ -24,3 +24,4 @@ class MainController {
         $this->genererPage($data_page);
     }
 }
+?>

@@ -22,7 +22,7 @@
     <div class="formulaire-profil d-flex justify-content-center">
         <form class="form-profil ">
             <div class="text-center">
-                <img src="..." class="img-fluid" alt="Photo">
+                <img name="image_profil" src="..." class="img-fluid" alt="Photo">
             </div>
             <div class="formulaire_input mt-4 row d-flex justify-content-center ">
                 <label for="prénom" class="form-label_profil g-0">Prénom</label>
@@ -31,21 +31,21 @@
 
             <div class=" mt-4 row d-flex justify-content-center ">
                 <label for="nom" class="form-label_profil g-0">Nom</label>
-                <input type="text" class="form-control_profil">
+                <input name="name_profil" type="text" class="form-control_profil">
             </div>
             <div class=" mt-4 row row d-flex justify-content-center">
                 <label for="number" class="form-label_profil g-0">Téléphone</label>
-                <input type="varchar" class="form-control_profil">
+                <input name="phone_profil" type="varchar" class="form-control_profil">
             </div>
 
             <div class=" mt-4 row d-flex justify-content-center">
                 <label for="email" class="form-label_profil g-0">Email</label>
-                <input type="email" class="form-control_profil">
+                <input name="email_profil" type="email" class="form-control_profil">
             </div>
 
             <div class=" mt-4 row row d-flex justify-content-center">
                 <label for="password1" class="form-label_profil g-0">Mot de Passe</label>
-                <input type="password" class="form-control_profil">
+                <input name="mdp_profil" type="password" class="form-control_profil">
             </div>
 
 

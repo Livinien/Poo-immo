@@ -38,22 +38,22 @@ include_once "common/header.php";
 
             <div class="mt-4 row d-flex justify-content-center">
                 <label for="nom" class="form-label-inscription">Nom</label>
-                <input type="text" class="form-control">
+                <input name="name_inscription" type="text" class="form-control">
             </div>
 
             <div class="mt-4 row d-flex justify-content-center">
                 <label for="email" class="form-label-inscription">Email</label>
-                <input type="email" class="form-control">
+                <input name="email_inscription" type="email" class="form-control">
             </div>
 
             <div class=" mt-4 row row d-flex justify-content-center">
                 <label for="password1" class="form-label-inscription">Mot de Passe</label>
-                <input type="password" class="form-control">
+                <input name="mdp_inscription" type="password" class="form-control">
             </div>
 
             <div class="mt-4 row row d-flex justify-content-center">
-                <label for="password2" class="form-label-inscription">Confirmer votre mot de passe</label>
-                <input type="password" class="form-control">
+                <label for="mdp2_inscription" class="form-label-inscription">Confirmer votre mot de passe</label>
+                <input name="" type="password" class="form-control">
             </div>
 
 

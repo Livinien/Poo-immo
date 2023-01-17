@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <?php require_once("views/common/header.php"); ?>
+    <?php require_once("../../views/common/header.php"); ?>
 
     <div class="container">
         <?php 
@@ -34,8 +34,12 @@
                 unset($_SESSION['alert']);
             }
         ?>
-        <?= $page_content; ?>
+        <?php $page_content; ?>
     </div>
+
+
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
@@ -48,6 +52,9 @@
     <script src="<?= URL?>public/JavaScript/<?= $fichier_javascript ?>"></script>
     <?php endforeach; ?>
     <?php endif; ?>
+
+    
+                  
 </body>
 
 </html>
