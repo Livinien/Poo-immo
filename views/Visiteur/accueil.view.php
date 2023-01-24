@@ -4,7 +4,7 @@
     <?php 
         if(!empty($_SESSION['alert'])) {
             foreach($_SESSION['alert'] as $alert){
-                echo "<div class='alert-success p-4' "."' role='alert'>
+                echo "<div class='alert-success p-5' "."' role='alert'>
                     ".$alert['message']."
                 </div>";
             }

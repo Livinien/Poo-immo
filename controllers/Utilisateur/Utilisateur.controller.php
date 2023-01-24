@@ -8,38 +8,40 @@ class UtilisateurController extends MainController {
 
     private $utilisateurManager;
 
-    
-    
     public function __construct() {
         $this->utilisateurManager = new UtilisateurManager();
     }
     
+    // CONFIRMATION DE L'UTILISATEUR, UNE FOIS QU'IL A CRÉE UN COMPTE
     
     public function validation_connexion($email, $password) {
     
+        // print_r("$email $password");
+        // print_r($email . ' ' . $password);
+       
         if($this->utilisateurManager->isCombinaisonValide($email, $password)) {
-            if($this->utilisateurManager->isCombinaisonValide($email, $password)) {
-                if($this->utilisateurManager->estCompteActive($email)) {
-                    Toolbox::ajouterMessageAlerte("Vous êtes maintenant connecté avec l'adresse email de : ".$email."!", Toolbox::COULEUR_VERTE);
-                    $_SESSION['profil'] = [
-                        "email" => $email,
-                    ];
-                    header("Location: ".URL."accueil");
-                    
-                } else {
-                    Toolbox::ajouterMessageAlerte("Le compte ".$email." n'a pas été activé", Toolbox::COULEUR_ROUGE);
-                    //Renvoyer le mail de validation à l'utilisateur
-                    header("Location: ".URL."connexion");
-                }
+            if($this->utilisateurManager->estCompteActive($email)) {
+                Toolbox::ajouterMessageAlerte("Vous êtes maintenant connecté avec l'adresse email de : ".$email."!", Toolbox::COULEUR_VERTE);
+                $_SESSION['profil'] = [
+                    "email" => $email,
+                ];
+                header("Location: ".URL."accueil");
+                
+            } else {
+                Toolbox::ajouterMessageAlerte("Le compte ".$email." n'a pas été activé", Toolbox::COULEUR_ROUGE);
+                //Renvoyer le mail de validation à l'utilisateur
+                header("Location: ".URL."connexion");
             }
             
         } else {
             Toolbox::ajouterMessageAlerte("La combinaison de l'email et du mot de passe est invalide", Toolbox::COULEUR_ROUGE);
             header("Location: ".URL."connexion");
         }
-   }
+    }
 
-
+   
+    // PAGE PROFIL DE L'UTILISATEUR
+   
    public function profil() {
     
         $datas = $this->utilisateurManager->getUserInformation($_SESSION['profil']['connexion']);
@@ -91,7 +93,7 @@ class UtilisateurController extends MainController {
     // ENVOIE D'EMAIL DE CONFIRMATION A L'UTILISATEUR
    
     private function sendMailValidation($prenom, $email, $clef) {
-        $urlVerification = URL."validationMail/".$prenom."/".$clef;
+        $urlVerification = URL."validationMail/".$email."/".$clef;
         $sujet = "Création du compte sur le site IMMOBELLO";
         $message = "Pour valider votre compte, veuillez cliquer sur le lien suivant ".$urlVerification;
         Toolbox::sendMail($email, $sujet, $message);

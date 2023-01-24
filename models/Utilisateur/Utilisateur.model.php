@@ -24,7 +24,6 @@ class UtilisateurManager extends MainManager {
         return password_verify($password, $passwordBD);
     }
 
-    
     public function estCompteActive($email) {
         $req = "SELECT est_valide FROM utilisateur WHERE email = :email";
         $stmt = $this->getBdd()->prepare($req);
