@@ -10,15 +10,4 @@ class Toolbox {
             "type" => $type
         ];
     }
-
-    public static function sendMail($destinataire, $sujet, $message) {
-        $headers = "From: flavdevweb@gmail.com";
-        if(mail($destinataire, $sujet, $message, $headers)) {
-            // self remplace Toolbox dès qu'on est à l'intérieur de celui-ci.
-            self::ajouterMessageAlerte("Mail envoyé", self::COULEUR_VERTE);
-            
-        } else {
-            self::ajouterMessageAlerte("Mail non envoyé", self::COULEUR_ROUGE);
-        }
-    }
 }

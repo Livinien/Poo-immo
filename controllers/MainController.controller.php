@@ -1,11 +1,8 @@
 <?php
 require_once("controllers/Toolbox.class.php");
 
-// Abtract qui montre que notre classe ne peut pas être instencier par elle-même. 
-// Elle ne peut pas avoir d'object et peut être seulement étendu.
+class MainController {
 
-abstract class MainController{
-    
     protected function genererPage($data){
         extract($data);
         ob_start();
@@ -15,10 +12,8 @@ abstract class MainController{
     }
 
     
-
-    // Partie pilotage pour gérer la page d'erreur
-    // Protected : cette fonction pourra être redéfini dans chacun des controllers qui seront présent dans Visiteur / Utilisateur / Administrateur
-    protected function pageErreur($msg){
+    
+    protected function pageErreur($msg) {
         $data_page = [
             "page_description" => "Page permettant de gérer les erreurs",
             "page_title" => "Page d'erreur",
@@ -29,3 +24,4 @@ abstract class MainController{
         $this->genererPage($data_page);
     }
 }
+?>

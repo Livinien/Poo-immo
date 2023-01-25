@@ -1,11 +1,13 @@
 <?php
 require_once("Model.class.php");
 
-// MainManager contiendront les requêtes en base de données.
+class MainManager extends Model{
 
-// On y mettre nos différentes requêtes et qui retourneront les informations au controller
-
-abstract class MainManager extends Model {
-
-   
+    public function getDatas(){
+        $req = $this->getBdd()->prepare("SELECT * FROM matable");
+        $req->execute();
+        $datas = $req->fetchAll(PDO::FETCH_ASSOC);
+        $req->closeCursor();
+        return $datas;
+    }
 }

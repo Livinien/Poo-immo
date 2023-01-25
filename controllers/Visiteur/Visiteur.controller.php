@@ -1,76 +1,28 @@
 <?php 
 
-require_once("./controllers/MainController.controller.php");
-require_once("./models/Visiteur/Visiteur.model.php");
-
-
-class VisiteurController extends MainController {
-
-    private $visiteurManager;
+    require_once("./controllers/MainController.controller.php");
 
     
-    public function __construct() {
-        $this->visiteurManager = new VisiteurManager();
-    }
-    
+// Abstract : ma classe ne peut pas être instencié - elle ne peut pas avoir d'objet
+    abstract class VisiteurController extends MainController {
+        
     //Propriété "page_css" : tableau permettant d'ajouter des fichiers CSS spécifiques
     //Propriété "page_javascript" : tableau permettant d'ajouter des fichiers JavaScript spécifiques
-
-    // Partie pilotage pour gérer toute la page d'accueil
-
-
-
     
-    // ACCUEIL
-    
-    public function accueil() {
-
+    public function accueil(){
         // Toolbox::ajouterMessageAlerte("test", Toolbox::COULEUR_VERTE);
 
         $data_page = [
-            "page_description" => "Accueil",
-            "page_title" => "IMMOBELLO - Accueil",
+            "page_description" => "Description de la page d'accueil",
+            "page_title" => "Titre de la page d'accueil",
             "view" => "views/Visiteur/accueil.view.php",
             "template" => "views/common/template.php"
         ];
         $this->genererPage($data_page);
     }
     
-    
-    
-    // CONNEXION
-    
-    public function connexion() {
-        
-        $data_page = [
-            "page_description" => "Connexion",
-            "page_title" => "IMMOBELLO - Connexion",
-            "view" => "views/Visiteur/connexion.view.php",
-            "template" => "views/common/template.php"
-        ];
-        $this->genererPage($data_page);
-    }
-
-
-    
-    // INSCRIPTION
-
-    public function inscription() {
-        
-        $data_page = [
-            "page_description" => "Inscription",
-            "page_title" => "IMMOBELLO - Inscription",
-            "view" => "views/Visiteur/inscription.view.php",
-            "template" => "views/common/template.php"
-        ];
-        $this->genererPage($data_page);
-    }
-    
-
-
-    // PAGE D'ERREUR
 
     public function pageErreur($msg) {
-        parent:: pageErreur($msg);
+        parent::pageError($msg);
     }
 }

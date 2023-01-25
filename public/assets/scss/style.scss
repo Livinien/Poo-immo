@@ -8,6 +8,9 @@
     box-sizing: border-box;
 }
 
+.hello {
+    background: red;
+}
 
 /* SITE VITRINE CLIENT ET AGENCE */
 
@@ -53,13 +56,14 @@
 .formulaire-connexion {
     background-image: url("../images/Image_connexion.png");
     background-size: cover;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
+
 }
 
 .form-connexion {
     background-color: #E77B59;
     padding: 5px;
-    margin-top: 85px;
+    margin-top: 152px;
     border-radius: 20px;
     width: 50%;
 }
@@ -89,16 +93,6 @@
     font-weight: bold;
     margin-bottom: 50px;
 }
-
-// .alert {
-//     margin-bottom: -2rem;
-//     color: rgb(150, 23, 0);
-// }
-
-// .alert2 {
-//     margin-top: 38px;
-//     color: rgb(35, 104, 0);
-// }
 
 @media(max-width: 1077px) {
 
